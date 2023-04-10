@@ -11,6 +11,9 @@ sudo su postgres <<EOF
 createdb  $DB_DATABASE;
 psql -c "CREATE USER $DB_USER WITH PASSWORD '$DB_PASSWORD';"
 psql -c "grant all privileges on database $DB_DATABASE to $DB_USER;"
+
+grant all on database code4u to code4user;
+alter database $DB_DATABASE OWNER TO $DB_USER;  
 echo "Postgres User '$DB_USER' and database '$DB_DATABASE' created."
 EOF
 
