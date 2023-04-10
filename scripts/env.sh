@@ -1,0 +1,3 @@
+export DB_USER=code4user
+export DB_PASSWORD=pwdcode4uhbubpwd
+export DB_DATABASE=code4u
