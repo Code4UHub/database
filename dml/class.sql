@@ -1,0 +1,15 @@
+INSERT INTO subject (subject_id, subject_name) VALUES ('CS10101', 'Introduction to Computer Science');
+INSERT INTO subject (subject_id, subject_name) VALUES ('IT10201', 'Information Technology Fundamentals');
+INSERT INTO subject (subject_id, subject_name) VALUES ('SE20101', 'Software Engineering Principles');
+INSERT INTO subject (subject_id, subject_name) VALUES ('DB30101', 'Database Design and Management');
+INSERT INTO subject (subject_id, subject_name) VALUES ('AI40101', 'Artificial Intelligence and Machine Learning');
+INSERT INTO subject (subject_id, subject_name) VALUES ('DS50101', 'Data Structures and Algorithms');
+INSERT INTO subject (subject_id, subject_name) VALUES ('WEB6010', 'Web Development with HTML, CSS, and JavaScript');
+INSERT INTO subject (subject_id, subject_name) VALUES ('DBMS701', 'Database Management Systems');
+INSERT INTO subject (subject_id, subject_name) VALUES ('NET8010', '.NET Framework and C# Programming');
+INSERT INTO subject (subject_id, subject_name) VALUES ('JAVA901', 'Java Programming');
+INSERT INTO subject (subject_id, subject_name) VALUES ('SEC1010', 'Introduction to Cybersecurity');
+INSERT INTO subject (subject_id, subject_name) VALUES ('IOSDEV2', 'iOS App Development with Swift');
+INSERT INTO subject (subject_id, subject_name) VALUES ('UIUX301', 'User Interface and User Experience Design');
+INSERT INTO subject (subject_id, subject_name) VALUES ('AGILE40', 'Agile Software Development');
+INSERT INTO subject (subject_id, subject_name) VALUES ('DEVOPS5', 'DevOps Practices and Tools');
