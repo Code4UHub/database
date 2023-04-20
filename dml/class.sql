@@ -26,12 +26,12 @@ INSERT INTO module (title, subject_id) VALUES ('Modulo 3 de la materia de 2d0 se
 
 
 -- class
-INSERT INTO class (code, subject_id) VALUES ('codclase1', 'CS10101');
-INSERT INTO class (code, subject_id) VALUES ('codeclase2', 'IT10201');
-INSERT INTO class (code, subject_id) VALUES ('gfdasdfds', 'WEB6010');
-INSERT INTO class (code, subject_id) VALUES ('vbxcdsvf', 'WEB6010');
-INSERT INTO class (code, subject_id) VALUES ('jhgbnvdfg', 'NET8010');
-INSERT INTO class (code, subject_id) VALUES ('gfdgfdr', 'NET8010');
+INSERT INTO class (code, is_finished, subject_id, teacher_id) VALUES ('codclase1', 'CS10101', FALSE, 'L00000001');
+INSERT INTO class (code, is_finished, subject_id, teacher_id) VALUES ('codeclase2', 'IT10201', FALSE, 'L00000001');
+INSERT INTO class (code, is_finished, subject_id, teacher_id) VALUES ('gfdasdfds', 'WEB6010', FALSE, 'L00000001');
+INSERT INTO class (code, is_finished, subject_id, teacher_id) VALUES ('vbxcdsvf', 'WEB6010', FALSE, 'L00000002');
+INSERT INTO class (code, is_finished, subject_id, teacher_id) VALUES ('jhgbnvdfg', 'NET8010', FALSE, 'L00000002');
+INSERT INTO class (code, is_finished, subject_id, teacher_id) VALUES ('gfdgfdr', 'NET8010', FALSE, 'L00000002');
 
 
 -- enabled modules
