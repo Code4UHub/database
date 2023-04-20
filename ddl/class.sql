@@ -20,9 +20,12 @@ DROP TABLE IF EXISTS class;
 CREATE TABLE class (
 	class_id SERIAL,
     code VARCHAR (30),
+    is_finished BOOLEAN,
     subject_id VARCHAR (9),
+    teacher_id VARCHAR (9),
     PRIMARY KEY (class_id),
-    FOREIGN KEY (subject_id) REFERENCES subject(subject_id)
+    FOREIGN KEY (subject_id) REFERENCES subject(subject_id),
+    FOREIGN KEY (teacher_id) REFERENCES teacher(teacher_id)
 );
 
 CREATE TABLE enabled_module (
