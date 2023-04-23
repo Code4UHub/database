@@ -15,6 +15,15 @@ INSERT INTO subject (subject_id, subject_name) VALUES ('UIUX301', 'User Interfac
 INSERT INTO subject (subject_id, subject_name) VALUES ('AGILE40', 'Agile Software Development');
 INSERT INTO subject (subject_id, subject_name) VALUES ('DEVOPS5', 'DevOps Practices and Tools');
 
+
+-- class
+INSERT INTO class (class_id, is_finished, finished_date, days, start_time, end_time, subject_id, teacher_id)
+VALUES ('CodeCl1', FALSE, NULL, '{"LU", "JU"}', '10:00:00', '11:30:00', 'CS10101', 'L00000001');
+
+INSERT INTO class (class_id, is_finished, finished_date, days, start_time, end_time, subject_id, teacher_id)
+VALUES ('CodeCl2', FALSE, NULL, '{"MA", "VI"}', '09:00:00', '10:00:00', 'CS10101', 'L00000002');
+
+
 -- module
 INSERT INTO module (title, subject_id) VALUES ('Modulo 1 de la materia de 2do semestre', 'CS10101');
 INSERT INTO module (title, subject_id) VALUES ('Modulo 2 de la materia de 1er semestre', 'CS10101');
@@ -25,25 +34,16 @@ INSERT INTO module (title, subject_id) VALUES ('Modulo 2 de la materia de 2d0 se
 INSERT INTO module (title, subject_id) VALUES ('Modulo 3 de la materia de 2d0 semestre', 'IT10201');
 
 
--- class
-INSERT INTO class (code, is_finished, subject_id, teacher_id) VALUES ('codclase1', 'CS10101', FALSE, 'L00000001');
-INSERT INTO class (code, is_finished, subject_id, teacher_id) VALUES ('codeclase2', 'IT10201', FALSE, 'L00000001');
-INSERT INTO class (code, is_finished, subject_id, teacher_id) VALUES ('gfdasdfds', 'WEB6010', FALSE, 'L00000001');
-INSERT INTO class (code, is_finished, subject_id, teacher_id) VALUES ('vbxcdsvf', 'WEB6010', FALSE, 'L00000002');
-INSERT INTO class (code, is_finished, subject_id, teacher_id) VALUES ('jhgbnvdfg', 'NET8010', FALSE, 'L00000002');
-INSERT INTO class (code, is_finished, subject_id, teacher_id) VALUES ('gfdgfdr', 'NET8010', FALSE, 'L00000002');
-
-
 -- enabled modules
 -- when creating a module, you will have to save the module_id
 -- and insert it alongside the class you want
-INSERT INTO enabled_module (module_id, class_id, is_active) VALUES (1, 1, TRUE);
-INSERT INTO enabled_module (module_id, class_id, is_active) VALUES (2, 1, TRUE);
-INSERT INTO enabled_module (module_id, class_id, is_active) VALUES (3, 1, TRUE);
-INSERT INTO enabled_module (module_id, class_id, is_active) VALUES (4, 1, TRUE);
-INSERT INTO enabled_module (module_id, class_id, is_active) VALUES (5, 2, TRUE);
-INSERT INTO enabled_module (module_id, class_id, is_active) VALUES (6, 2, TRUE);
-INSERT INTO enabled_module (module_id, class_id, is_active) VALUES (7, 2, TRUE);
+INSERT INTO enabled_module (module_id, class_id, is_active) VALUES (1, 'CodeCl1', TRUE);
+INSERT INTO enabled_module (module_id, class_id, is_active) VALUES (2, 'CodeCl1', TRUE);
+INSERT INTO enabled_module (module_id, class_id, is_active) VALUES (3, 'CodeCl1', TRUE);
+INSERT INTO enabled_module (module_id, class_id, is_active) VALUES (4, 'CodeCl1', TRUE);
+INSERT INTO enabled_module (module_id, class_id, is_active) VALUES (5, 'CodeCl2', TRUE);
+INSERT INTO enabled_module (module_id, class_id, is_active) VALUES (6, 'CodeCl2', TRUE);
+INSERT INTO enabled_module (module_id, class_id, is_active) VALUES (7, 'CodeCl2', TRUE);
 
 
 
