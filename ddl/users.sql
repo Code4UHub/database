@@ -10,7 +10,7 @@ CREATE TABLE student (
 
 DROP TABLE IF EXISTS teacher;
 CREATE TABLE teacher (
-	teacher_id VARCHAR (9) UNIQUE NOT NULL,
+	teacher_id VARCHAR (20) UNIQUE NOT NULL,
 	first_name VARCHAR ( 50 ) NOT NULL,
 	last_name VARCHAR ( 50 ) NOT NULL,
 	email VARCHAR ( 50 ) UNIQUE NOT NULL,
