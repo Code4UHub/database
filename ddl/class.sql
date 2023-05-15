@@ -15,7 +15,7 @@ CREATE TABLE class (
     start_time TIME,
     end_time TIME,
     subject_id VARCHAR (9),
-    teacher_id VARCHAR (9),
+    teacher_id VARCHAR (20),
     PRIMARY KEY (class_id),
     FOREIGN KEY (subject_id) REFERENCES subject(subject_id),
     FOREIGN KEY (teacher_id) REFERENCES teacher(teacher_id)
@@ -37,4 +37,14 @@ CREATE TABLE enabled_module (
     PRIMARY KEY (module_id, class_id),
     FOREIGN KEY (module_id) REFERENCES module(module_id),
 	FOREIGN KEY (class_id) REFERENCES class(class_id)
+);
+
+CREATE TABLE student_class (
+  student_id VARCHAR (9),
+  class_id VARCHAR (10),
+  pending BOOLEAN,
+  request_date DATE,
+  PRIMARY KEY (student_id, class_id),
+  FOREIGN KEY (student_id) REFERENCES student(student_id),
+  FOREIGN KEY (class_id) REFERENCES class(class_id)
 );
