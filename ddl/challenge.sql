@@ -1,8 +1,8 @@
 DROP TABLE IF EXISTS difficulty_id;
 CREATE TABLE difficulty (
-	difficulty_id SERIAL,
+	difficulty_id INTEGER,
     difficulty VARCHAR(15),
-    PRIMARY KEY (difficulty_id),
+    PRIMARY KEY (difficulty_id)
 );
 
 DROP TABLE IF EXISTS challenge;
@@ -11,7 +11,7 @@ CREATE TABLE challenge (
     module_id INTEGER, 
     difficulty_id INTEGER,
     PRIMARY KEY (challenge_id),
-    FOREIGN KEY (module_id) REFERENCES module(module_id)
+    FOREIGN KEY (module_id) REFERENCES module(module_id),
     FOREIGN KEY (difficulty_id) REFERENCES difficulty(difficulty_id)
 );
 
@@ -20,5 +20,5 @@ CREATE TABLE question (
 	question_id SERIAL,
     question JSONB,
     type VARCHAR(10),
-    PRIMARY KEY (question_id),
+    PRIMARY KEY (question_id)
 );
