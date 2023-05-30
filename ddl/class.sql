@@ -9,6 +9,7 @@ CREATE TABLE subject (
 DROP TABLE IF EXISTS class;
 CREATE TABLE class (
 	class_id VARCHAR (10),
+    number_of_students INTEGER,
     is_finished BOOLEAN,
     finished_date DATE,
     days VARCHAR(2)[],

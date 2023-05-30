@@ -52,3 +52,13 @@ CREATE TABLE student_question (
     FOREIGN KEY (question_id) REFERENCES question(question_id)
 );
 
+
+DROP TABLE IF EXISTS student_module;
+CREATE TABLE student_module (
+    student_id VARCHAR(9),
+	module_id INTEGER,
+    score INTEGER,
+    PRIMARY KEY (student_id, module_id),
+    FOREIGN KEY (student_id) REFERENCES student(student_id),
+    FOREIGN KEY (module_id) REFERENCES module(module_id)
+);
