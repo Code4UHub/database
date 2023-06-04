@@ -18,7 +18,11 @@ CREATE TABLE question_h (
 	question_h_id SERIAL,
     question JSONB,
     type VARCHAR(10),
-    PRIMARY KEY (question_h_id)
+    difficulty_id INTEGER,
+    module_id INTEGER,
+    PRIMARY KEY (question_h_id),
+    FOREIGN KEY (difficulty_id) REFERENCES difficulty(difficulty_id),
+    FOREIGN KEY (module_id) REFERENCES module(module_id)
 );
 
 DROP TABLE IF EXISTS homework_question;
@@ -40,4 +44,19 @@ CREATE TABLE student_homework (
     FOREIGN KEY (homework_id) REFERENCES homework(homework_id),
 	FOREIGN KEY (student_id) REFERENCES student(student_id)
 );
+
+
+DROP TABLE IF EXISTS student_homework_question;
+CREATE TABLE student_homework_question (
+	homework_id INTEGER,
+    question_h_id INTEGER,
+    student_id VARCHAR(9),
+    solution JSONB,
+    passed BOOLEAN,
+    PRIMARY KEY (homework_id, question_h_id, student_id),
+    FOREIGN KEY (homework_id) REFERENCES homework(homework_id),
+    FOREIGN KEY (question_h_id) REFERENCES question_h(question_h_id),
+	FOREIGN KEY (student_id) REFERENCES student(student_id)
+);
+
 

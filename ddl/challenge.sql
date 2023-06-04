@@ -35,6 +35,7 @@ CREATE TABLE student_challenge (
     student_id VARCHAR(9),
 	challenge_id INTEGER,
     score INTEGER,
+    status VARCHAR(10),
     PRIMARY KEY (challenge_id, student_id),
     FOREIGN KEY (student_id) REFERENCES student(student_id),
     FOREIGN KEY (challenge_id) REFERENCES challenge(challenge_id)
