@@ -36,6 +36,7 @@ CREATE TABLE student_challenge (
 	challenge_id INTEGER,
     score INTEGER,
     status VARCHAR(10),
+    start_date DATE,
     PRIMARY KEY (challenge_id, student_id),
     FOREIGN KEY (student_id) REFERENCES student(student_id),
     FOREIGN KEY (challenge_id) REFERENCES challenge(challenge_id)
@@ -47,7 +48,7 @@ CREATE TABLE student_question (
     student_id VARCHAR(9),
 	question_id INTEGER,
     solution JSONB,
-    passed BOOLEAN,
+    score INTEGER,
     PRIMARY KEY (student_id, question_id),
     FOREIGN KEY (student_id) REFERENCES student(student_id),
     FOREIGN KEY (question_id) REFERENCES question(question_id)

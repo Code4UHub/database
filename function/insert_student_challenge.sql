@@ -18,8 +18,8 @@ BEGIN
         FETCH NEXT FROM challenge_cursor INTO cur_challenge_id;
         EXIT WHEN NOT FOUND;
 
-        INSERT INTO student_challenge (student_id, challenge_id, score) 
-        VALUES (NEW.student_id, cur_challenge_id, 0);
+        INSERT INTO student_challenge (student_id, challenge_id, score, status) 
+        VALUES (NEW.student_id, cur_challenge_id, 0, 'start');
         
     END LOOP;
     
