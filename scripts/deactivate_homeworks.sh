@@ -1,0 +1,1 @@
+PGPASSWORD=pwdcode4uhbubpwd psql -U code4user -d code4u -c "SELECT deactivate_homework();"

@@ -8,6 +8,7 @@ CREATE TABLE homework (
     closed_questions INTEGER,
     total_points INTEGER,
     deadline DATE,
+    is_active BOOLEAN,
     PRIMARY KEY (homework_id),
     FOREIGN KEY (class_id) REFERENCES class(class_id),
     FOREIGN KEY (difficulty_id) REFERENCES difficulty(difficulty_id)
@@ -41,6 +42,7 @@ CREATE TABLE student_homework (
     student_id VARCHAR(9),
     score INTEGER,
     start_date DATE,
+    out_of_focus_time INTEGER,
     PRIMARY KEY (homework_id, student_id),
     FOREIGN KEY (homework_id) REFERENCES homework(homework_id),
 	FOREIGN KEY (student_id) REFERENCES student(student_id)
