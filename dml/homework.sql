@@ -1,43 +1,6 @@
--- difficulty
-INSERT INTO difficulty (difficulty_id, difficulty, points_per_questions) VALUES (1, 'Fácil', 30);
-INSERT INTO difficulty (difficulty_id, difficulty, points_per_questions) VALUES (2, 'Medio', 50);
-INSERT INTO difficulty (difficulty_id, difficulty, points_per_questions) VALUES (3, 'Difícil', 70);
-
-
--- challenge
-INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (1, 1, "Challenge 1", 1, 3);
-
-INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (1, 2, "Challenge 2", 2, 2);
-
-INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (1, 3, "Challenge 3", 1, 1);
-
---
-INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (2, 1, "Challenge 4", 1, 3);
-
-INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (2, 2, "Challenge 5", 2, 2);
-
-INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (2, 3, "Challenge 6", 1, 1);
-
---
-INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (3, 1, "Challenge 7", 1, 3);
-
-INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (3, 2, "Challenge 8", 2, 2);
-
-INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (3, 3, "Challenge 9", 1, 2);
-
-
 
 -- closed questions
-INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 1, '{
     "id": "TC1028_21_OM_1",
     "author": "Andre Rossell",
     "title": "Comprensión de Comentarios",
@@ -62,7 +25,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 1, '{
     "id": "TC1028_21_OM_2",
     "author": "Andre Rossell",
     "title": "Distinción entre funciones elementales",
@@ -87,7 +50,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 1, '{
     "id": "TC1028_21_OM_3",
     "author": "Andre Rossell",
     "title": "Distinción entre funciones elementales",
@@ -112,7 +75,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 1, '{
     "id": "TC1028_21_OM_5",
     "author": "Andre Rossell",
     "title": "Distinción entre funciones elementales",
@@ -137,7 +100,68 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 1, '{
+    "id": "TC1028_21_OM_8",
+    "author": "Christian Raúl Jiménez Hernández",
+    "title": "Sintaxis en Python",
+    "description": "¿Cuál de las siguientes líneas de código en Python contiene un ERROR de sintaxis?",
+    "topic": "[TOPIC FAULT] 2.1 Estructura básica de un programa secuencial",
+    "difficulty": "Fácil",
+    "answer": 2,
+    "hints": true,
+    "options": [
+        {
+            "text": "print('Hola, mundo!')",
+            "explanation": "Incorrecto. Esta línea de código es correcta porque imprime el mensaje 'Hola, mundo!' en la consola."
+        },
+        {
+            "text": "numero = 10",
+            "explanation": "Incorrecto. Esta línea de código es correcta porque asigna el valor entero 10 a la variable 'numero'."
+        },
+        {
+            "text": "if x == 5: print('El valor de x es igual a 5')",
+            "explanation": "Correcto. Esta línea de código contiene un error de sintaxis, falta cerrar el bloque de código con dos puntos y una indentación adecuada."
+        },
+        {
+            "text": "for i in range(10): print(i)",
+            "explanation": "Incorrecto. Esta línea de código es correcta ya que imprime los valores del 0 al 9 en la consola."
+        }
+    ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 1, '{
+    "id": "TC1028_21_OM_10",
+    "author": "Christian Raúl Jiménez Hernández",
+    "title": "Error de código en Python",
+    "description": "Dado el siguiente código en Python, ¿qué error tiene?\n\nx = 5\ny = '2'\nresultado = x + y",
+    "topic": "[TOPIC FAULT] 2.1 Estructura básica de un programa secuencial",
+    "difficulty": "Fácil",
+    "answer": 2,
+    "hints": true,
+    "options": [
+        {
+            "text": "Falta un signo de igual en la segunda línea.",
+            "explanation": "Incorrecto. La segunda línea asigna el valor '2' a la variable y, y lo hace correctamente con el signo de igual."
+        },
+        {
+            "text": "La variable x no está definida.",
+            "explanation": "Incorrecto. La variable x está definida en la primera línea con el valor 5."
+        },
+        {
+            "text": "No se pueden sumar un número y una cadena de texto.",
+            "explanation": "Correcto. La suma de un número y una cadena de texto no está permitida en Python, por lo que este es el error en el código."
+        },
+        {
+            "text": "El resultado no está siendo asignado a ninguna variable.",
+            "explanation": "Incorrecto. El resultado de la suma está siendo asignado a la variable resultado en la tercera línea."
+        }
+    ]
+}');
+
+
+
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 2, '{
     "id": "TC1028_21_OM_4",
     "author": "Andre Rossell",
     "title": "Detección de errores en el código",
@@ -162,7 +186,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 2, '{
     "id": "TC1028_21_OM_6",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Lógica",
@@ -191,7 +215,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 2, '{
     "id": "TC1028_21_OM_9",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Lógica en Python",
@@ -220,7 +244,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 2, '{
     "id": "TC1028_21_OM_11",
     "author": "Administrador",
     "title": "Sintaxis para imprimir un caracter en Python",
@@ -249,7 +273,38 @@ INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (3, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 2, '{
+    "id": "TC1028_21_OM_13",
+    "author": "Administrador",
+    "title": "¿Qué sucede al declarar dos veces una variable con diferente valor?",
+    "description": "¿Qué sucederá al ejecturar las siguientes líneas de código en Python?\nx = 2\nx = 3\n",
+    "topic": "[TOPIC FAULT] 2.1 Estructura básica de un programa secuencial.",
+    "difficulty": "Mediano",
+    "answer": 1,
+    "hints": true,
+    "options": [
+        {
+            "text": "Se declaran dos variables con el mismo nombre",
+            "explanation": "Incorrecto. No es posible declarar dos variables con el mismo nombre en un mismo bloque de código."
+        },
+        {
+            "text": "Se declara una variable que conserva el valor de 3",
+            "explanation": "Correcto. La variable termina con el último valor asignado."
+        },
+        {
+            "text": "Se declara una variable que conserva el valor de 2",
+            "explanation": "Inorrecto. La variable termina con el último valor asignado."
+        },
+        {
+            "text": "El programa marcará error",
+            "explanation": "Incorrecto. Solo se está asignando y actualizando el valor de x por lo que no debe de mostrarse un error."
+        }
+    ]
+}');
+
+
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 3, '{
     "id": "TC1028_21_OM_7",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Selecciona la opción correcta.",
@@ -278,7 +333,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (3, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (3, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 3, '{
     "id": "TC1028_21_OM_12",
     "author": "Administrador",
     "title": "Sintaxis requerida para sumar una variable con un entero en Python",
@@ -303,32 +358,18 @@ INSERT INTO question (challenge_id, type, question) VALUES (3, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (3, "closed", '{
-    "id": "TC1028_21_OM_17",
-    "author": "Administrador",
-    "title": "Selecciona la opción correcta.",
-    "description": "¿Cuál de las siguientes opciones describe una característica INCORRECTA de Python?",
-    "topic": "[TOPIC FAULT] 2.1 Estructura básica de un programa secuencial.",
-    "difficulty": "Difícil",
-    "answer": 1,
-    "hints": true,
-    "options": [
-        {
-            "text": "Se debe declarar una variable antes de ser utilizada.",
-            "explanation": "Incorrecto. Esta característica es verdadera, debido a que Python es un lenguaje interpretado."
-        },
-        {
-            "text": "Es necesario determinar variables junto con su tipo antes de que se les pueda asignar un valor.",
-            "explanation": "Correcto. Una variable puede ser declarada junto a un valor sin necesidad de ser declarada antes ni de estipular su tipo."
-        },
-        {
-            "text": "No es necesario declarar el código a ejecutar dentro de una función \"main\"",
-            "explanation": "Incorrecto. En Python no hace falta que el código principal de tu programa esté dentro de una función."
-        }
-    ]
-}');
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 3, '');
 
-INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 3, '');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 3, '');
+
+
+
+
+
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 1, '{
     "id": "TC1028_21_OM_14",
     "author": "Administrador",
     "title": "Uso de sintaxis en Python",
@@ -349,7 +390,32 @@ INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 1, '{
+    "id": "TC1028_21_OM_15",
+    "author": "Administrador",
+    "title": "Función de los comentarios en Python",
+    "description": "¿Cuál es una de las funciones de los comentarios en Python?",
+    "topic": "[TOPIC FAULT] 2.1 Estructura básica de un programa secuencial.",
+    "difficulty": "Mediano",
+    "answer": 2,
+    "hints": true,
+    "options": [
+        {
+            "text": "Asignar valores numéricos que influyen en el código",
+            "explanation": "Incorrecto. Los comentarios no influyen en la ejecución del código."
+        },
+        {
+            "text": "Agregar anotaciones que sean de utilidad para el programador y que influyen en el código",
+            "explanation": "Incorrecto. Los comentarios no influyen en la ejecución del código."
+        },
+        {
+            "text": "Agregar anotaciones que sean de utilidad para el programador pero que no influyen en el código",
+            "explanation": "Correcto. Los comentarios son elementos de gran utilidad para el programador pero que no influyen en el código."
+        }
+    ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 1, '{
     "id": "TC1028_21_OM_16",
     "author": "Administrador",
     "title": "¿Cuál es el error en el siguiente código?",
@@ -378,7 +444,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 1, '{
     "id": "TC1028_21_OM_19",
     "author": "Administrador",
     "title": "¿Cuál es la sintaxis correcta para imprimir la cadena \"Hola, Mundo\" en Python?",
@@ -407,7 +473,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 1, '{
     "id": "TC1028_22_OM_1",
     "author": "Andre Rossell",
     "title": "Bools, ints, floats...",
@@ -432,7 +498,40 @@ INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (5, "closed", '{
+
+
+
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 2, '{
+    "id": "TC1028_21_OM_13",
+    "author": "Administrador",
+    "title": "¿Qué sucede al declarar dos veces una variable con diferente valor?",
+    "description": "¿Qué sucederá al ejecturar las siguientes líneas de código en Python?\nx = 2\nx = 3\n",
+    "topic": "[TOPIC FAULT] 2.1 Estructura básica de un programa secuencial.",
+    "difficulty": "Mediano",
+    "answer": 1,
+    "hints": true,
+    "options": [
+        {
+            "text": "Se declaran dos variables con el mismo nombre",
+            "explanation": "Incorrecto. No es posible declarar dos variables con el mismo nombre en un mismo bloque de código."
+        },
+        {
+            "text": "Se declara una variable que conserva el valor de 3",
+            "explanation": "Correcto. La variable termina con el último valor asignado."
+        },
+        {
+            "text": "Se declara una variable que conserva el valor de 2",
+            "explanation": "Inorrecto. La variable termina con el último valor asignado."
+        },
+        {
+            "text": "El programa marcará error",
+            "explanation": "Incorrecto. Solo se está asignando y actualizando el valor de x por lo que no debe de mostrarse un error."
+        }
+    ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 2, '{
     "id": "TC1028_21_OM_18",
     "author": "Administrador",
     "title": "Selecciona la opción correcta.",
@@ -461,7 +560,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (5, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (5, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 2, '{
     "id": "TC1028_21_OM_20",
     "author": "Administrador",
     "title": "¿Cuál de las siguientes opciones describe una característica VERDADERA de Python?",
@@ -490,7 +589,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (5, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (5, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 2, '{
     "id": "TC1028_22_OM_3",
     "author": "Andre Rossell",
     "title": "Diferencias entre numeros y strings",
@@ -519,33 +618,31 @@ INSERT INTO question (challenge_id, type, question) VALUES (5, "closed", '{
     ]
 }');
 
-
-INSERT INTO question (challenge_id, type, question) VALUES (6, "closed", '{
-    "id": "TC1028_21_OM_12",
-    "author": "Administrador",
-    "title": "Sintaxis requerida para sumar una variable con un entero en Python",
-    "description": "¿Qué es NECESARIO codificar para poder sumar un entero con una variable dada por el usuario en Python?",
-    "topic": "[TOPIC FAULT] 2.1 Estructura básica de un programa secuencial.",
-    "difficulty": "Difícil",
-    "answer": 2,
-    "hints": true,
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 2, '{
+    "id": "TC1028_22_OM_4",
+    "author": "Andre Rossell",
+    "title": "¿Quién y qué soy?",
+    "description": "128==128.0==int('128')",
+    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
+    "difficulty": "Mediano",
+    "answer": 1,
+    "hints": false,
     "options": [
         {
-            "text": "Declarar la variable dada por el usuario usuario líneas de código antes de pedirla con input",
-            "explanation": "Incorrecto. Es posible declarar la variable en la misma línea de código que es pedida."
+            "text": "True",
+            "explanation": ""
         },
         {
-            "text": "Asignar el numero entero como una variable en el codigo",
-            "explanation": "Incorrecto. Es posible sumar directamente un valor entero sin necesidad de asignarlo a una variable."
-        },
-        {
-            "text": "Declarar en la variable dada por el usuario que se trata de un entero",
-            "explanation": "Correcto. Al pedir un valor numérico en Python se requiere indicar el tipo de dato antes del input para obtener el valor correcto."
+            "text": "False",
+            "explanation": ""
         }
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (6, "closed", '{
+
+
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 3, '{
     "id": "TC1028_21_OM_17",
     "author": "Administrador",
     "title": "Selecciona la opción correcta.",
@@ -570,7 +667,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (6, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (6, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 3, '{
     "id": "TC1028_22_OM_5",
     "author": "Andre Rossell",
     "title": "Operadores y su aplicabilidad",
@@ -595,315 +692,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (6, "closed", '{
     ]
 }');
 
-
-INSERT INTO question (challenge_id, type, question) VALUES (7, "closed", '{
-    "id": "TC1028_21_OM_16",
-    "author": "Administrador",
-    "title": "¿Cuál es el error en el siguiente código?",
-    "description": "Selecciona la opción que corresponde al error en el siguiente código:\n <code class=\"language-python\">a = 3 \n c = a + b \n b = 5 </code>",
-    "topic": "[TOPIC FAULT] 2.1 Estructura básica de un programa secuencial.",
-    "difficulty": "Fácil",
-    "answer": 2,
-    "hints": true,
-    "options": [
-        {
-            "text": "Hace falta \";\" al final de cada línea.",
-            "explanation": "Incorrecto. Recuerda que en Python no es necesario colocar \";\"."
-        },
-        {
-            "text": "La variable \"c\" no tiene un valor asignado.",
-            "explanation": "Incorrecto. La variable \"c\" adquiere el valor de la suma de \"a\" y \"b\" durante la ejecución."
-        },
-        {
-            "text": "La variable \"b\" es llamada antes de ser declarada.",
-            "explanation": "Correcto. Recuerda que antes de utilizar una variable, es necesario mencionarla."
-        },
-        {
-            "text": "No se declara el tipo de las variables con anterioridad.",
-            "explanation": "Incorrecto. En Python no es necesario declarar el tipo de dato de forma explícita."
-        }
-    ]
-}');
-
-INSERT INTO question (challenge_id, type, question) VALUES (7, "closed", '{
-    "id": "TC1028_21_OM_19",
-    "author": "Administrador",
-    "title": "¿Cuál es la sintaxis correcta para imprimir la cadena \"Hola, Mundo\" en Python?",
-    "description": "Selecciona la opción que contiene la sintaxis correcta para imprimir la cadena \"Hola, Mundo\" en Python.",
-    "topic": "[TOPIC FAULT] 2.1 Estructura básica de un programa secuencial.",
-    "difficulty": "Fácil",
-    "answer": 1,
-    "hints": true,
-    "options": [
-        {
-            "text": "print(\"Hola, Mundo\")",
-            "explanation": "Correcto. Esta es la forma correcta de imprimir la cadena \"Hola, Mundo\" en Python."
-        },
-        {
-            "text": "print(\"Hola Mundo\")",
-            "explanation": "Incorrecto. Falta la coma entre \"Hola\" y \"Mundo\"."
-        },
-        {
-            "text": "imprime(\"Hola, Mundo\")",
-            "explanation": "Incorrecto. La función correcta para imprimir en Python es \"print()\"."
-        },
-        {
-            "text": "imprimir(\"Hola Mundo\")",
-            "explanation": "Incorrecto. La función correcta para imprimir en Python es \"print()\"."
-        }
-    ]
-}');
-
-INSERT INTO question (challenge_id, type, question) VALUES (7, "closed", '{
-    "id": "TC1028_22_OM_1",
-    "author": "Andre Rossell",
-    "title": "Bools, ints, floats...",
-    "description": "¿Qué tipo de dato de representación númerica nos ayuda a representar una toma de decisiones dentro de un código cuando únicamente hay dos posibles cursos de acción?",
-    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
-    "difficulty": "Fácil",
-    "answer": 2,
-    "hints": false,
-    "options": [
-        {
-            "text": "Floats",
-            "explanation": ""
-        },
-        {
-            "text": "Booleanos",
-            "explanation": ""
-        },
-        {
-            "text": "Ints",
-            "explanation": ""
-        }
-    ]
-}');
-
-INSERT INTO question (challenge_id, type, question) VALUES (7, "closed", '{
-    "id": "TC1028_22_OM_2",
-    "author": "Andre Rossell",
-    "title": "Acerca de sobreescribir",
-    "description": "¿Cómo sabemos cuando actualizar el valor de una variable y cuando declarar una variable nueva?",
-    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
-    "difficulty": "Fácil",
-    "answer": 2,
-    "hints": false,
-    "options": [
-        {
-            "text": "No lo sabemos, ya que esto depende de si va a ser una entrada o una salida.",
-            "explanation": ""
-        },
-        {
-            "text": "Se debe de actualizar la misma variable cuando el nuevo valor significa lo mismo dentro del código y hay un cambio de condiciones, pues un valor con otro propósito debe ser almacenado en otra variable.",
-            "explanation": ""
-        },
-        {
-            "text": "Hay que actualizar las mismas variables que se declararon al inicio del código para evitar crear más y consumir mucha memoria.",
-            "explanation": ""
-        }
-    ]
-}');     
-
-INSERT INTO question (challenge_id, type, question) VALUES (7, "closed", '{
-    "id": "TC1028_22_OM_14",
-    "author": "Administrador",
-    "title": "Uso de variables o constantes para datos en específico",
-    "description": "¿Qué valor sería más eficiente ser guardado de forma constante dentro de un código y no como una variable dada?",
-    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
-    "difficulty": "Fácil",
-    "answer": 0,
-    "hints": true,
-    "options": [
-        {
-            "text": "El número pi",
-            "explanation": "Correcto. El número pi se suele tomar siempre con el mismo valor en todo un programa y no suele variar."
-        },
-        {
-            "text": "Edad de una persona",
-            "explanation": "Incorrecto. La edad de una persona podría ser diferente dependiendo del usuario."
-        },
-        {
-            "text": "Nombre de un presidente",
-            "explanation": "Incorrecto. La edad de una persona podría ser diferente dependiendo del lugar y del tiempo."
-        },
-        {
-            "text": "La hora actual",
-            "explanation": "Incorrecto. La hora actual podría ser diferente dependiendo del usuario o del momento en que se ejecute el programa."
-        }
-    ]
-}');     
-
-INSERT INTO question (challenge_id, type, question) VALUES (8, "closed", '{
-    "id": "TC1028_22_OM_9",
-    "author": "Administrador",
-    "title": "Identificador de variables",
-    "description": "¿Cuál es el tipo de dato de la variable resultado en la siguiente línea de código: int -resultado = 10 * 5;?",
-    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
-    "difficulty": "Mediano",
-    "answer": 2,
-    "hints": true,
-    "options": [
-        {
-            "text": "String",
-            "explanation": "Incorrecto. Una cadena de texto se representa en programación utilizando comillas dobles o simples y no está relacionada con una operación matemática como la que se realiza en la línea de código dada."
-        },
-        {
-            "text": "Object",
-            "explanation": "Incorrecto. Se trata de un tipo de dato que representa un objeto en programación, y no se relaciona con una variable numérica como resultado"
-        },
-        {
-            "text": "Integer",
-            "explanation": "Correcto. Representa un dato de tipo entero"
-        },
-        {
-            "text": "Float",
-            "explanation": "Incorrecto. Representa un tipo de dato numérico con decimales, y la operación realizada en la línea de código dada no involucra decimales"
-        }
-    ]
-}');     
-
-INSERT INTO question (challenge_id, type, question) VALUES (8, "closed", '{
-    "id": "TC1028_22_OM_10",
-    "author": "Administrador",
-    "title": "Identificador de variables 2",
-    "description": "¿Cuál es el valor de la variable x después de la siguiente línea de código: int x = 5; x++;",
-    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
-    "difficulty": "Mediano",
-    "answer": 2,
-    "hints": true,
-    "options": [
-        {
-            "text": "4",
-            "explanation": "Incorrecto. La variable x se inicializa en 5 y se incrementa en 1 con la operación x++, por lo que su valor final es 6."
-        },
-        {
-            "text": "5",
-            "explanation": "Incorrecto. La variable x se incrementa en 1 con la operación x++, lo que hace que su valor final sea 6, no 5."
-        },
-        {
-            "text": "6",
-            "explanation": "Correcto. La variable x se inicializa en 5 y se incrementa en 1 con la operación x++, lo que hace que su valor final sea 6."
-        },
-        {
-            "text": "7",
-            "explanation": "Incorrecto. La variable x se inicializa en 5 y solo se incrementa en 1 con la operación x++, por lo que su valor final es 6, no 7."
-        }
-    ]
-}');  
-
-INSERT INTO question (challenge_id, type, question) VALUES (8, "closed", '{
-    "id": "TC1028_22_OM_12",
-    "author": "Administrador",
-    "title": "Valores válidos en los diferentes tipos de datos",
-    "description": "¿Cuál de los siguientes tipos de datos cuenta con el menor número de valores posibles en Python?",
-    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
-    "difficulty": "Mediano",
-    "answer": 3,
-    "hints": true,
-    "options": [
-        {
-            "text": "float",
-            "explanation": "Incorrecto. Un dato de tipo int puede guardar la mayoría de números flotantes al menos que se trate de un número muy grande."
-        },
-        {
-            "text": "int",
-            "explanation": "Incorrecto. Un dato de tipo int puede guardar la mayoría de números enteros al menos que se trate de un número muy grande."
-        },
-        {
-            "text": "list",
-            "explanation": "Incorrecto. Un dato list en Python puede guardar cualquier tipo de dato válido."
-        },
-        {
-            "text": "bool",
-            "explanation": "Correcto. Las datos de tipo bool solo pueden tomar como valores True o False."
-        }
-    ]
-}');  
-
-INSERT INTO question (challenge_id, type, question) VALUES (8, "closed", '{
-    "id": "TC1028_22_OM_13",
-    "author": "Administrador",
-    "title": "Tipo de datos en ingresos y gastos",
-    "description": "¿Cuál de los siguientes tipos de datos sería más útil para registrar en un programa los ingresos y gastos?",
-    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
-    "difficulty": "Mediano",
-    "answer": 2,
-    "hints": true,
-    "options": [
-        {
-            "text": "str",
-            "explanation": "Incorrecto. Un dato de tipo string no permitiría realizar operaciones matemáticas de forma práctica."
-        },
-        {
-            "text": "int",
-            "explanation": "Incorrecto. Un dato de tipo int no permitiría registrar valores numéricos más exactos."
-        },
-        {
-            "text": "float",
-            "explanation": "Correcto. Un dato de tipo float permitiría registrar valores numéricos más exactos además de permitir realizar operaciones matemáticas."
-        },
-        {
-            "text": "bool",
-            "explanation": "Incorrecto. Los datos de tipo boolean no serviría para guardar valores numéricos como los ingresos."
-        }
-    ]
-}');  
-
-INSERT INTO question (challenge_id, type, question) VALUES (8, "closed", '{
-    "id": "TC1028_22_OM_13",
-    "author": "Administrador",
-    "title": "Tipo de datos en ingresos y gastos",
-    "description": "¿Cuál de los siguientes tipos de datos sería más útil para registrar en un programa los ingresos y gastos?",
-    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
-    "difficulty": "Mediano",
-    "answer": 2,
-    "hints": true,
-    "options": [
-        {
-            "text": "str",
-            "explanation": "Incorrecto. Un dato de tipo string no permitiría realizar operaciones matemáticas de forma práctica."
-        },
-        {
-            "text": "int",
-            "explanation": "Incorrecto. Un dato de tipo int no permitiría registrar valores numéricos más exactos."
-        },
-        {
-            "text": "float",
-            "explanation": "Correcto. Un dato de tipo float permitiría registrar valores numéricos más exactos además de permitir realizar operaciones matemáticas."
-        },
-        {
-            "text": "bool",
-            "explanation": "Incorrecto. Los datos de tipo boolean no serviría para guardar valores numéricos como los ingresos."
-        }
-    ]
-}');  
-
-INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
-    "id": "TC1028_22_OM_5",
-    "author": "Andre Rossell",
-    "title": "Operadores y su aplicabilidad",
-    "description": "¿Cuál de las siguientes operaciones presentará incompatibilidad por tipo de datos?",
-    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
-    "difficulty": "Difícil",
-    "answer": 2,
-    "hints": true,
-    "options": [
-        {
-            "text": "'200'-135.2",
-            "explanation": "El 200 se evaluará como entero, será parseado a float para la operación y se podrá completar sin problema."
-        },
-        {
-            "text": "'Hola'<'Hello'",
-            "explanation": "Los operadores de comparación no se limitan a los números, también aplican a strings."
-        },
-        {
-            "text": "24%True",
-            "explanation": "El operador módulo sólo aplica a números (int o float)."
-        }
-    ]
-}');  
-
-INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 3, '{
     "id": "TC1028_22_OM_6",
     "author": "Administrador",
     "title": "Diferencias entre variables y constantes",
@@ -930,9 +719,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
             "explanation": "Incorrecto. Aunque ambas variables y constantes representan un espacio en la memoria que almacena un valor, una constante se utiliza para almacenar un valor que no cambia a lo largo de la ejecución del programa, mientras que una variable se utiliza para almacenar valores que pueden cambiar."
         }
     ]
-}');  
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 3, '{
     "id": "TC1028_22_OM_7",
     "author": "Administrador",
     "title": "Tipos de datos",
@@ -959,9 +748,330 @@ INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
             "explanation": "Incorrecto. Se refiere a una subrutina que se utiliza para realizar una tarea específica en el programa"
         }
     ]
-}');  
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
+
+
+
+
+
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 1, '{
+    "id": "TC1028_22_OM_14",
+    "author": "Administrador",
+    "title": "Uso de variables o constantes para datos en específico",
+    "description": "¿Qué valor sería más eficiente ser guardado de forma constante dentro de un código y no como una variable dada?",
+    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
+    "difficulty": "Fácil",
+    "answer": 0,
+    "hints": true,
+    "options": [
+        {
+            "text": "El número pi",
+            "explanation": "Correcto. El número pi se suele tomar siempre con el mismo valor en todo un programa y no suele variar."
+        },
+        {
+            "text": "Edad de una persona",
+            "explanation": "Incorrecto. La edad de una persona podría ser diferente dependiendo del usuario."
+        },
+        {
+            "text": "Nombre de un presidente",
+            "explanation": "Incorrecto. La edad de una persona podría ser diferente dependiendo del lugar y del tiempo."
+        },
+        {
+            "text": "La hora actual",
+            "explanation": "Incorrecto. La hora actual podría ser diferente dependiendo del usuario o del momento en que se ejecute el programa."
+        }
+    ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 1, '{
+    "id": "TC1028_22_OM_15",
+    "author": "Administrador",
+    "title": "Tipo de dato de un número",
+    "description": "¿Un número puede ser asignado a un tipo de dato numérico (int, float) y a un dato de tipo string?",
+    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
+    "difficulty": "Fácil",
+    "answer": 0,
+    "hints": true,
+    "options": [
+        {
+            "text": "Verdadero",
+            "explanation": "Correcto. Si bien cuentan con diferentes propiedades, los carácteres numéricos también pueden ser guardados como string."
+        },
+        {
+            "text": "Falso",
+            "explanation": "Incorrecto. Los números si pueden ser guardados como string aunque contarán con las propiedades de dicho tipo de dato."
+        }
+    ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 1, '{
+    "id": "TC1028_23_OM_1",
+    "author": "Andre Rossell",
+    "title": "Jerarquía de operaciones en Python",
+    "description": "¿Qué línea de código dará como resultado 9?",
+    "topic": "[TOPIC FAULT] 2.3 Expresiones aritméticas",
+    "difficulty": "Fácil",
+    "answer": 2,
+    "hints": false,
+    "options": [
+        {
+            "text": "print(6%2*1+2)",
+            "explanation": ""
+        },
+        {
+            "text": "print(6/(2*1)+2)",
+            "explanation": ""
+        },
+        {
+            "text": "print(6/2*(1+2))",
+            "explanation": ""
+        }
+    ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 1, '{
+    "id": "TC1028_23_OM_2",
+    "author": "Andre Rossell",
+    "title": "Jerarquía de operadores",
+    "description": "¿Cuál de las siguientes operaciones lleva más prioridad por la jerarquía de python?",
+    "topic": "[TOPIC FAULT] 2.3 Expresiones aritméticas",
+    "difficulty": "Fácil",
+    "answer": 1,
+    "hints": false,
+    "options": [
+        {
+            "text": "^",
+            "explanation": ""
+        },
+        {
+            "text": "*",
+            "explanation": ""
+        },
+        {
+            "text": "+",
+            "explanation": ""
+        }
+    ]
+}');
+
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 2, '{
+    "id": "TC1028_22_OM_9",
+    "author": "Administrador",
+    "title": "Identificador de variables",
+    "description": "¿Cuál es el tipo de dato de la variable resultado en la siguiente línea de código: int -resultado = 10 * 5;?",
+    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
+    "difficulty": "Mediano",
+    "answer": 2,
+    "hints": true,
+    "options": [
+        {
+            "text": "String",
+            "explanation": "Incorrecto. Una cadena de texto se representa en programación utilizando comillas dobles o simples y no está relacionada con una operación matemática como la que se realiza en la línea de código dada."
+        },
+        {
+            "text": "Object",
+            "explanation": "Incorrecto. Se trata de un tipo de dato que representa un objeto en programación, y no se relaciona con una variable numérica como resultado"
+        },
+        {
+            "text": "Integer",
+            "explanation": "Correcto. Representa un dato de tipo entero"
+        },
+        {
+            "text": "Float",
+            "explanation": "Incorrecto. Representa un tipo de dato numérico con decimales, y la operación realizada en la línea de código dada no involucra decimales"
+        }
+    ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 2, '{
+    "id": "TC1028_22_OM_10",
+    "author": "Administrador",
+    "title": "Identificador de variables 2",
+    "description": "¿Cuál es el valor de la variable x después de la siguiente línea de código: int x = 5; x++;",
+    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
+    "difficulty": "Mediano",
+    "answer": 2,
+    "hints": true,
+    "options": [
+        {
+            "text": "4",
+            "explanation": "Incorrecto. La variable x se inicializa en 5 y se incrementa en 1 con la operación x++, por lo que su valor final es 6."
+        },
+        {
+            "text": "5",
+            "explanation": "Incorrecto. La variable x se incrementa en 1 con la operación x++, lo que hace que su valor final sea 6, no 5."
+        },
+        {
+            "text": "6",
+            "explanation": "Correcto. La variable x se inicializa en 5 y se incrementa en 1 con la operación x++, lo que hace que su valor final sea 6."
+        },
+        {
+            "text": "7",
+            "explanation": "Incorrecto. La variable x se inicializa en 5 y solo se incrementa en 1 con la operación x++, por lo que su valor final es 6, no 7."
+        }
+    ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 2, '{
+    "id": "TC1028_22_OM_12",
+    "author": "Administrador",
+    "title": "Valores válidos en los diferentes tipos de datos",
+    "description": "¿Cuál de los siguientes tipos de datos cuenta con el menor número de valores posibles en Python?",
+    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
+    "difficulty": "Mediano",
+    "answer": 3,
+    "hints": true,
+    "options": [
+        {
+            "text": "float",
+            "explanation": "Incorrecto. Un dato de tipo int puede guardar la mayoría de números flotantes al menos que se trate de un número muy grande."
+        },
+        {
+            "text": "int",
+            "explanation": "Incorrecto. Un dato de tipo int puede guardar la mayoría de números enteros al menos que se trate de un número muy grande."
+        },
+        {
+            "text": "list",
+            "explanation": "Incorrecto. Un dato list en Python puede guardar cualquier tipo de dato válido."
+        },
+        {
+            "text": "bool",
+            "explanation": "Correcto. Las datos de tipo bool solo pueden tomar como valores True o False."
+        }
+    ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 2, '{
+    "id": "TC1028_22_OM_13",
+    "author": "Administrador",
+    "title": "Tipo de datos en ingresos y gastos",
+    "description": "¿Cuál de los siguientes tipos de datos sería más útil para registrar en un programa los ingresos y gastos?",
+    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
+    "difficulty": "Mediano",
+    "answer": 2,
+    "hints": true,
+    "options": [
+        {
+            "text": "str",
+            "explanation": "Incorrecto. Un dato de tipo string no permitiría realizar operaciones matemáticas de forma práctica."
+        },
+        {
+            "text": "int",
+            "explanation": "Incorrecto. Un dato de tipo int no permitiría registrar valores numéricos más exactos."
+        },
+        {
+            "text": "float",
+            "explanation": "Correcto. Un dato de tipo float permitiría registrar valores numéricos más exactos además de permitir realizar operaciones matemáticas."
+        },
+        {
+            "text": "bool",
+            "explanation": "Incorrecto. Los datos de tipo boolean no serviría para guardar valores numéricos como los ingresos."
+        }
+    ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 2, '{
+    "id": "TC1028_23_OM_3",
+    "author": "Andre Rossell",
+    "title": "Tipos de datos en operaciones",
+    "description": "Supón que tienes una función para detectar errores cuando uno intenta una operación aritmética, que regresa True cuando hay un error y False cuando no. ¿Qué opción regresaría True?",
+    "topic": "[TOPIC FAULT] 2.3 Expresiones aritméticas",
+    "difficulty": "Mediano",
+    "answer": 0,
+    "hints": false,
+    "options": [
+        {
+            "text": "'200'/2",
+            "explanation": ""
+        },
+        {
+            "text": "128+2.0",
+            "explanation": ""
+        },
+        {
+            "text": "40%5",
+            "explanation": ""
+        }
+    ]
+}');
+
+
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 3, '{
+    "id": "TC1028_23_OM_13",
+    "author": "Administrador",
+    "title": "Uso de los corchetes en Python",
+    "description": "¿Los corchetes se utilizan principalmente para indicar mayor prioridad en expresiones matemáticas en Python?",
+    "topic": "[TOPIC FAULT] 2.3 Expresiones aritméticas.",
+    "difficulty": "Difícil",
+    "answer": 1,
+    "hints": true,
+    "options": [
+        {
+            "text": "Verdadero",
+            "explanation": "Incorrecto. Los corchetes se utilizan principalmente para crear y manipular datos de tipo list."
+        },
+        {
+            "text": "Falso",
+            "explanation": "Correcto. Los corchetes se utilizan principalmente para crear y manipular datos de tipo list."
+        }
+    ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 3, '{
+    "id": "TC1028_25_OM_1",
+    "author": "Andre Rossell",
+    "title": "Sustitución de fórmulas matemáticas",
+    "description": "¿Se puede implementar nativamente (sin módulos importados) en Python la Fórmula General para Ecuaciones Cuadráticas Completas?",
+    "topic": "[TOPIC FAULT] 2.5 Solución de problemas con fórmulas matemáticas",
+    "difficulty": "Difícil",
+    "answer": 0,
+    "hints": true,
+    "options": [
+        {
+            "text": "Sí",
+            "explanation": "Cierto, aunque la ruta fácil es con paqueterías adicionales, siempre puedes desarrollar todo desde 0."
+        },
+        {
+            "text": "No",
+            "explanation": "En realidad, esto sí se puede implementar, pues es posible desarrollar una solución para calcular la raíz cuadrada"
+        }
+    ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 3, '{
+    "id": "TC1028_22_OM_11",
+    "author": "Administrador",
+    "title": "Sintaxis en nombres de variables",
+    "description": "¿Cuál de las siguientes aseveraciones es verdadera en Python?",
+    "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
+    "difficulty": "Difícil",
+    "answer": 3,
+    "hints": true,
+    "options": [
+        {
+            "text": "Las variables pueden tener cualquier nombre",
+            "explanation": "Incorrecto. El nombre de las variables cuenta con restricciones como no comenzar con un número o no ser igual a palabras reservadas."
+        },
+        {
+            "text": "Pueden declararse variables con el mismo nombre en un mismo bloque de código",
+            "explanation": "Incorrecto. El nombre de las variables dentro de un mismo bloque de código no puede ser repetido."
+        },
+        {
+            "text": "El nombre de una variable puede comenzar con un número",
+            "explanation": "Incorrecto. El nombre de las variables cuenta con restricciones como el no comenzar con un número."
+        },
+        {
+            "text": "La variable de nombre x es diferente a la variable de nombre X",
+            "explanation": "Correcto. Al utilizar la X mayúscula se está representando un carácter distinto a la x minúscula, por lo que se trata de dos variables diferentes."
+        }
+    ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 3, '{
     "id": "TC1028_22_OM_8",
     "author": "Administrador",
     "title": "Constantes",
@@ -988,12 +1098,14 @@ INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
             "explanation": "Incorrecto. Porque 4 no es el resultado de la operación 10 % 3"
         }
     ]
-}');  
+}');
+
+
 
 
 
 -- open questions
-INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 1, '{
     "id": "TC1028_21_C_1",
     "author": "Andre Rossell",
     "title": "Inicio de sesión básico.",
@@ -1019,9 +1131,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
         "output": "Hola, andre!"
       }
     ]
-}');  
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 1, '{
     "id": "TC1028_21_C_6",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Edad y país adaptado.",
@@ -1051,10 +1163,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
         "output": "Bienvenido, tu edad es 21 años y eres de Alemania\n"
       }
     ]
-  }');  
+  }');
 
-
-INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 1, '{
     "id": "TC1028_21_C_7",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Multiplicacion de dos números.",
@@ -1088,10 +1199,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
             "output": 675
         }
     ]
-}');  
+}');
 
-
-INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 1, '{
     "id": "TC1028_21_C_11",
     "author": "Administrador",
     "title": "Calcula edad.",
@@ -1117,10 +1227,38 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
         "output": 19
       }
     ]
-}');  
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 1, '{
+    "id": "TC1028_21_C_12",
+    "author": "Administrador",
+    "title": "Programa número de mascotas.",
+    "description": "Elabora un programa que recibe un número entero que representa el número de mascotas e imprime un mensaje de cuidado. Ejemplo: 'Cuida de tus 2 mascotas'.",
+    "topic": "2.1 Estructura básica de un programa secuencial.",
+    "difficulty": "Fácil",
+    "driver": "numero_mascotas",
+    "tests": [
+      {
+        "input": 1,
+        "output": "Cuida de tus 1 mascotas"
+      },
+      {
+        "input": 10,
+        "output": "Cuida de tus 10 mascotas"
+      },
+      {
+        "input": 35,
+        "output": "Cuida de tus 35 mascotas"
+      },
+      {
+        "input": 0,
+        "output": "Cuida de tus 0 mascotas"
+      }
+    ]
+}');
 
 
-INSERT INTO question (challenge_id, type, question) VALUES (2, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 2, '{
     "id": "TC1028_21_C_2",
     "author": "Andre Roosell",
     "title": "Diferencia con inputs.",
@@ -1146,9 +1284,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (2, "open", '{
         "output": -30
       }
     ]
-}');  
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (2, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 2, '{
     "id": "TC1028_21_C_3",
     "author": "Andre Rossell",
     "title": "Procesamiento de entradas y salidas.",
@@ -1174,9 +1312,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (2, "open", '{
         "output": 0
       }
     ]
-}');  
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (2, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 2, '{
     "id": "TC1028_21_C_8",
     "author": "Christian Raul Jiménez Hernández",
     "title": "Estructura de inputs y outputs.",
@@ -1204,7 +1342,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (2, "open", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (3, "open", '{
+
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 3, '{
     "id": "TC1028_21_C_4",
     "author": "Andre Rossell",
     "title": "Procesamiento de entradas y salidas 2.",
@@ -1232,7 +1372,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (3, "open", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (3, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 3, '{
     "id": "TC1028_21_C_5",
     "author": "Andre Rossell",
     "title": "Concatenación básica.",
@@ -1260,7 +1400,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (3, "open", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (3, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 3, '{
     "id": "TC1028_21_C_9",
     "author": "Christian Raul Jiménez Hernández",
     "title": "Conversiones de números.",
@@ -1288,36 +1428,38 @@ INSERT INTO question (challenge_id, type, question) VALUES (3, "open", '{
     ]
 }');
 
-
-INSERT INTO question (challenge_id, type, question) VALUES (4, "open", '{
-    "id": "TC1028_21_C_12",
-    "author": "Administrador",
-    "title": "Programa número de mascotas.",
-    "description": "Elabora un programa que recibe un número entero que representa el número de mascotas e imprime un mensaje de cuidado. Ejemplo: 'Cuida de tus 2 mascotas'.",
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 3, '{
+    "id": "TC1028_21_C_10",
+    "author": "Christian Raul Jiménez Hernández",
+    "title": "Concatenación de números.",
+    "description": "Realiza un programa que al escribir 2 números se unan.",
     "topic": "2.1 Estructura básica de un programa secuencial.",
-    "difficulty": "Fácil",
-    "driver": "numero_mascotas",
+    "difficulty": "Díficil",
+    "driver": "concatenacion",
     "tests": [
       {
-        "input": 1,
-        "output": "Cuida de tus 1 mascotas"
+        "input": [23 , 45],
+        "output": 2345
       },
       {
-        "input": 10,
-        "output": "Cuida de tus 10 mascotas"
+        "input": [3 , 5],
+        "output": 35
       },
       {
-        "input": 35,
-        "output": "Cuida de tus 35 mascotas"
+        "input": [11 , 10],
+        "output": 1110
       },
       {
-        "input": 0,
-        "output": "Cuida de tus 0 mascotas"
+        "input": [20 , 23],
+        "output": 2023
       }
     ]
-}');  
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (4, "open", '{
+
+
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 1, '{
     "id": "TC1028_21_C_13",
     "author": "Administrador",
     "title": "Incrementar variable en 2.",
@@ -1343,9 +1485,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (4, "open", '{
         "output": 2
       }
     ]
-}');  
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (4, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 1, '{
     "id": "TC1028_21_C_14",
     "author": "Administrador",
     "title": "Disminuir variable en 2.",
@@ -1371,9 +1513,106 @@ INSERT INTO question (challenge_id, type, question) VALUES (4, "open", '{
         "output": -2
       }
     ]
-}'); 
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (5, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 1, '{
+    "id": "TC1028_21_C_15",
+    "author": "Administrador",
+    "title": "Número de turno.",
+    "description": "Programa que reciba un número entero y muestre un mensaje diciendo el turno en una fila según dicho número. Ejemplo: 'Estás en el turno 3'.",
+    "topic": "2.1 Estructura básica de un programa secuencial.",
+    "difficulty": "Fácil",
+    "driver": "turno",
+    "tests": [
+      {
+        "input": 1,
+        "output": "Estás en el turno 3"
+      },
+      {
+        "input": 21,
+        "output": "Estás en el turno 21"
+      },
+      {
+        "input": -1,
+        "output": "Estás en el turno -1"
+      },
+      {
+        "input": 0,
+        "output": "Estás en el turno 0"
+      }
+    ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 1, '{
+    "id": "TC1028_21_C_16",
+    "author": "Administrador",
+    "title": "Saludo personalizado.",
+    "description": "Escribe un programa que pida al usuario su nombre y su edad, y que luego imprima un saludo personalizado que incluya su nombre y edad.",
+    "topic": "2.1 Estructura básica de un programa secuencial.",
+    "difficulty": "Fácil",
+    "driver": "saludo_personalizado",
+    "tests": [
+        {
+            "input": ["Juan", 20],
+            "output": "Hola, Juan. ¡Qué bien que tengas 20 años!"
+        },
+        {
+            "input": ["Ana", 25],
+            "output": "Hola, Ana. ¡Qué bien que tengas 25 años!"
+        },
+        {
+            "input": ["Luis", 30],
+            "output": "Hola, Luis. ¡Qué bien que tengas 30 años!"
+        },
+        {
+            "input": ["Pedro", 10],
+            "output": "Hola, Pedro. ¡Qué bien que tengas 10 años!"
+        },
+        {
+            "input": ["Francisco", 45],
+            "output": "Hola, Francisco. ¡Qué bien que tengas 45 años!"
+        }
+    ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 1, '{
+    "id": "TC1028_21_C_17",
+    "author": "Administrador",
+    "title": "Suma de dos números.",
+    "description": "Escribe un programa que pida al usuario dos números enteros y que luego calcule la suma de estos dos números.",
+    "topic": "2.1 Estructura básica de un programa secuencial.",
+    "difficulty": "Fácil",
+    "driver": "suma_dos_numeros",
+    "tests": [
+        {
+            "input": [5, 10],
+            "output": 15
+        },
+        {
+            "input": [100, 50],
+            "output": 150
+        },
+        {
+            "input": [-2, 7],
+            "output": 5
+        },
+        {
+            "input": [5, 10],
+            "output": 15
+        },
+        {
+            "input": [-10, 10],
+            "output": 0
+        },
+        {
+            "input": [3, 15],
+            "output": 18
+        }
+    ]
+}');
+
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 2, '{
     "id": "TC1028_22_C_3",
     "author": "Andre Rossell",
     "title": "Comparación de strings.",
@@ -1399,9 +1638,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (5, "open", '{
         "output": "800"
       }
     ]
-}'); 
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (5, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 2, '{
     "id": "TC1028_22_C_4",
     "author": "Andre Rossell",
     "title": "Tratamiento booleano.",
@@ -1427,9 +1666,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (5, "open", '{
         "output": true
       }
     ]
-}'); 
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (5, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 2, '{
     "id": "TC1028_22_C_8",
     "author": "Administrador",
     "title": "Verificar tipos de datos.",
@@ -1455,38 +1694,10 @@ INSERT INTO question (challenge_id, type, question) VALUES (5, "open", '{
         "output": "FALSE"
       }
     ]
-}'); 
+}');
 
 
-INSERT INTO question (challenge_id, type, question) VALUES (5, "open", '{
-    "id": "TC1028_22_C_8",
-    "author": "Administrador",
-    "title": "Verificar tipos de datos.",
-    "description": "Realice un programa donde identifique si el numero entero es un multiplo de 2. Imprime 'TRUE' si es correcto o 'FALSE' si es incorrecto.",
-    "topic": "2.2 Variables, constantes y tipos de datos.",
-    "difficulty": "Mediano",
-    "driver": "multiplos_2_bool",
-    "tests": [
-      {
-        "input": 13,
-        "output": "FALSE"
-      },
-      {
-        "input": 80,
-        "output": "TRUE"
-      },
-      {
-        "input": 120,
-        "output": "TRUE"
-      },
-      {
-        "input": 25,
-        "output": "FALSE"
-      }
-    ]
-}'); 
-
-INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 3, '{
   "id": "TC1028_21_C_20",
   "author": "Administrador",
   "title": "Operaciones con strings.",
@@ -1516,9 +1727,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
       "output": "La longitud de la cadena es 12. La primera letra es h"
     }
   ]
-}'); 
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 3, '{
     "id": "TC1028_22_C_2",
     "author": "Andre Rossell",
     "title": "Detección de entradas 2.",
@@ -1544,9 +1755,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
         "output": "True"
       }
     ]
-}'); 
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 3, '{
     "id": "TC1028_22_C_5",
     "author": "Andre Rossell",
     "title": "Tratamiento booleano.",
@@ -1572,9 +1783,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
         "output": 3.0
       }
     ]
-}'); 
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 3, '{
     "id": "TC1028_22_C_6",
     "author": "Administrador",
     "title": "Variables y tipos de datos.",
@@ -1600,9 +1811,77 @@ INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
         "output": "area=30"
       }
     ]
-}'); 
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (7, "open", '{
+
+
+
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 1, '{
+    "id": "TC1028_21_C_18",
+    "author": "Administrador",
+    "title": "Saludo personalizado.",
+    "description": "Escribe un programa que solicite al usuario su nombre y apellido, y luego imprima un saludo personalizado que incluya ambos datos. Ejemplo: 'Hola Juan Pérez, ¡bienvenido!'.",
+    "topic": "2.1 Estructura básica de un programa secuencial.",
+    "difficulty": "Fácil",
+    "driver": "saludo_personalizado",
+    "tests": [
+      {
+        "input": ["Juan", "Pérez"],
+        "output": "Hola Juan Pérez, ¡bienvenido!"
+      },
+      {
+        "input": ["Ana", "Gómez"],
+        "output": "Hola Ana Gómez, ¡bienvenido!"
+      },
+      {
+        "input": ["Pedro", "Ramírez"],
+        "output": "Hola Pedro Ramírez, ¡bienvenido!"
+      },
+      {
+        "input": ["María", "Hernández"],
+        "output": "Hola María Hernández, ¡bienvenido!"
+      },
+      {
+        "input": ["Pablo", "López"],
+        "output": "Hola Pablo López, ¡bienvenido!"
+      }
+    ]
+  }');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 1, '{
+  "id": "TC1028_21_C_19",
+  "author": "Administrador",
+  "title": "Conversión de temperatura.",
+  "description": "Escribe un programa que solicite al usuario una temperatura en grados Celsius e imprima la temperatura en grados Fahrenheit.",
+  "topic": "2.1 Estructura básica de un programa secuencial.",
+  "difficulty": "Fácil",
+  "driver": "conversion_temperatura",
+  "tests": [
+    {
+      "input": 0,
+      "output": 32.0
+    },
+    {
+      "input": 20,
+      "output": 68.0
+    },
+    {
+      "input": -10,
+      "output": 14.0
+    },
+    {
+      "input": 37,
+      "output": 98.6
+    },
+    {
+      "input": 100,
+      "output": 212.0
+    }
+  ]
+}');
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 1, '{
     "id": "TC1028_22_C_1",
     "author": "Andre Rossell",
     "title": "Detección de entradas.",
@@ -1628,9 +1907,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (7, "open", '{
         "output": "True"
       }
     ]
-}'); 
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (7, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 1, '{
     "id": "TC1028_22_C_10",
     "author": "Administrador",
     "title": "Constantes negativas.",
@@ -1656,9 +1935,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (7, "open", '{
         "output": -2023
       }
     ]
-}'); 
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (7, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 1, '{
     "id": "TC1028_22_C_15",
     "author": "Administrador",
     "title": "Suma de dos fuerzas.",
@@ -1684,38 +1963,10 @@ INSERT INTO question (challenge_id, type, question) VALUES (7, "open", '{
         "output": 13.65
       }
     ]
-}'); 
-
-INSERT INTO question (challenge_id, type, question) VALUES (7, "open", '{
-    "id": "TC1028_23_C_3",
-    "author": "Andre Rossell",
-    "title": "Operación más básica.",
-    "description": "Realiza un script que, regrese el valor del número que reciba como entrada sumado con 2.",
-    "topic": "2.3 Expresiones aritméticas.",
-    "difficulty": "Fácil",
-    "driver": "sumatoriaFx",
-    "tests": [
-      {
-        "input": 2,
-        "output": 4
-      },
-      {
-        "input": -2,
-        "output": 0
-      },
-      {
-        "input": 4,
-        "output": 6
-      },
-      {
-        "input": 0,
-        "output": 2
-      }
-    ]
-}');    
+}');
 
 
-INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 2, '{
     "id": "TC1028_22_C_9",
     "author": "Administrador",
     "title": "Identificacion de tipos de datos.",
@@ -1741,9 +1992,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
         "output": "FALSE"
       }
     ]
-}');  
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 2, '{
     "id": "TC1028_22_C_11",
     "author": "Administrador",
     "title": "Número de llantas de n carros.",
@@ -1769,9 +2020,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
         "output": 52
       }
     ]
-}');  
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 2, '{
     "id": "TC1028_22_C_12",
     "author": "Administrador",
     "title": "Suma de número entero con número de punto flotante.",
@@ -1797,9 +2048,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
         "output": 456.01234
       }
     ]
-}');  
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 2, '{
     "id": "TC1028_22_C_13",
     "author": "Administrador",
     "title": "Concatena 2 strings.",
@@ -1825,9 +2076,10 @@ INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
         "output": "1.4si"
       }
     ]
-}');  
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (9, "open", '{
+
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 3, '{
     "id": "TC1028_22_C_7",
     "author": "Administrador",
     "title": "Diferentes tipos de datos.",
@@ -1853,9 +2105,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (9, "open", '{
         "output": "Int"
       }
     ]
-}');  
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (9, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 3, '{
     "id": "TC1028_23_C_2",
     "author": "Andre Rossell",
     "title": "IF y Operaciones.",
@@ -1881,9 +2133,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (9, "open", '{
         "output": 0
       }
     ]
-}');  
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (9, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 3, '{
     "id": "TC1028_23_C_5",
     "author": "Andre Rossell",
     "title": "IF para Operaciones.",
@@ -1909,9 +2161,9 @@ INSERT INTO question (challenge_id, type, question) VALUES (9, "open", '{
         "output": -12
       }
     ]
-}');  
+}');
 
-INSERT INTO question (challenge_id, type, question) VALUES (9, "open", '{
+INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 3, '{
     "id": "TC1028_23_C_7",
     "author": "Administrador",
     "title": "Calculadora básica.",
@@ -1937,4 +2189,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (9, "open", '{
           "output": 2
         }
       ]
-  }');  
+  }');
+
+
+
