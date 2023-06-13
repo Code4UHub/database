@@ -55,7 +55,7 @@ CREATE TABLE student_homework_question (
     question_h_id INTEGER,
     student_id VARCHAR(9),
     solution JSONB,
-    passed BOOLEAN,
+    score INTEGER,
     PRIMARY KEY (homework_id, question_h_id, student_id),
     FOREIGN KEY (homework_id) REFERENCES homework(homework_id),
     FOREIGN KEY (question_h_id) REFERENCES question_h(question_h_id),
