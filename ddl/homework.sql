@@ -42,6 +42,7 @@ CREATE TABLE student_homework (
     student_id VARCHAR(9),
     score INTEGER,
     start_date DATE,
+    end_data DATE,
     out_of_focus_time INTEGER,
     PRIMARY KEY (homework_id, student_id),
     FOREIGN KEY (homework_id) REFERENCES homework(homework_id),
