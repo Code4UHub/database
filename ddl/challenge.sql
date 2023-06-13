@@ -36,8 +36,8 @@ CREATE TABLE student_challenge (
 	challenge_id INTEGER,
     score INTEGER,
     status VARCHAR(10),
-    start_date DATE,
-    end_date DATE,
+    start_date NUMERIC,
+    end_date NUMERIC,
     PRIMARY KEY (challenge_id, student_id),
     FOREIGN KEY (student_id) REFERENCES student(student_id),
     FOREIGN KEY (challenge_id) REFERENCES challenge(challenge_id)
