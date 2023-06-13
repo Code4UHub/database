@@ -1,6 +1,5 @@
-
 -- closed questions
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'closed', 1, '{
     "id": "TC1028_21_OM_1",
     "author": "Andre Rossell",
     "title": "Comprensión de Comentarios",
@@ -25,7 +24,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'closed', 1, '{
     "id": "TC1028_21_OM_2",
     "author": "Andre Rossell",
     "title": "Distinción entre funciones elementales",
@@ -50,7 +49,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'closed', 1, '{
     "id": "TC1028_21_OM_3",
     "author": "Andre Rossell",
     "title": "Distinción entre funciones elementales",
@@ -75,7 +74,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'closed', 1, '{
     "id": "TC1028_21_OM_5",
     "author": "Andre Rossell",
     "title": "Distinción entre funciones elementales",
@@ -100,7 +99,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'closed', 1, '{
     "id": "TC1028_21_OM_8",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Sintaxis en Python",
@@ -111,15 +110,15 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
     "hints": true,
     "options": [
         {
-            "text": "print('Hola, mundo!')",
-            "explanation": "Incorrecto. Esta línea de código es correcta porque imprime el mensaje 'Hola, mundo!' en la consola."
+            "text": "print(`Hola, mundo!`)",
+            "explanation": "Incorrecto. Esta línea de código es correcta porque imprime el mensaje `Hola, mundo!` en la consola."
         },
         {
             "text": "numero = 10",
-            "explanation": "Incorrecto. Esta línea de código es correcta porque asigna el valor entero 10 a la variable 'numero'."
+            "explanation": "Incorrecto. Esta línea de código es correcta porque asigna el valor entero 10 a la variable `numero`."
         },
         {
-            "text": "if x == 5: print('El valor de x es igual a 5')",
+            "text": "if x == 5: print(`El valor de x es igual a 5`)",
             "explanation": "Correcto. Esta línea de código contiene un error de sintaxis, falta cerrar el bloque de código con dos puntos y una indentación adecuada."
         },
         {
@@ -129,11 +128,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'closed', 1, '{
     "id": "TC1028_21_OM_10",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Error de código en Python",
-    "description": "Dado el siguiente código en Python, ¿qué error tiene?\n\nx = 5\ny = '2'\nresultado = x + y",
+    "description": "Dado el siguiente código en Python, ¿qué error tiene?\n\nx = 5\ny = `2`\nresultado = x + y",
     "topic": "[TOPIC FAULT] 2.1 Estructura básica de un programa secuencial",
     "difficulty": "Fácil",
     "answer": 2,
@@ -141,7 +140,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
     "options": [
         {
             "text": "Falta un signo de igual en la segunda línea.",
-            "explanation": "Incorrecto. La segunda línea asigna el valor '2' a la variable y, y lo hace correctamente con el signo de igual."
+            "explanation": "Incorrecto. La segunda línea asigna el valor `2` a la variable y, y lo hace correctamente con el signo de igual."
         },
         {
             "text": "La variable x no está definida.",
@@ -161,7 +160,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
 
 
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'closed', 2, '{
     "id": "TC1028_21_OM_4",
     "author": "Andre Rossell",
     "title": "Detección de errores en el código",
@@ -186,7 +185,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'closed', 2, '{
     "id": "TC1028_21_OM_6",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Lógica",
@@ -215,7 +214,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'closed', 2, '{
     "id": "TC1028_21_OM_9",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Lógica en Python",
@@ -244,7 +243,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'closed', 2, '{
     "id": "TC1028_21_OM_11",
     "author": "Administrador",
     "title": "Sintaxis para imprimir un caracter en Python",
@@ -259,11 +258,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
             "explanation": "Incorrecto. La acción realizada imprime la variable de nombre a, más no necesariamente a la letra a"
         },
         {
-            "text": "print('a')",
+            "text": "print(`a`)",
             "explanation": "Correcto. La acción realizada imprime como carácter la letra a"
         },
         {
-            "text": "input('a')",
+            "text": "input(`a`)",
             "explanation": "Incorrecto. La acción realizada se utiliza para pedir una entrada al usuario después de mostrar la letra a"
         },
         {
@@ -273,7 +272,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'closed', 2, '{
     "id": "TC1028_21_OM_13",
     "author": "Administrador",
     "title": "¿Qué sucede al declarar dos veces una variable con diferente valor?",
@@ -304,7 +303,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
 
 
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'closed', 3, '{
     "id": "TC1028_21_OM_7",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Selecciona la opción correcta.",
@@ -333,7 +332,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'closed', 3, '{
     "id": "TC1028_21_OM_12",
     "author": "Administrador",
     "title": "Sintaxis requerida para sumar una variable con un entero en Python",
@@ -358,18 +357,9 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 3, '');
-
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 3, '');
-
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "closed", 3, '');
 
 
-
-
-
-
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'closed', 1, '{
     "id": "TC1028_21_OM_14",
     "author": "Administrador",
     "title": "Uso de sintaxis en Python",
@@ -390,7 +380,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'closed', 1, '{
     "id": "TC1028_21_OM_15",
     "author": "Administrador",
     "title": "Función de los comentarios en Python",
@@ -415,7 +405,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'closed', 1, '{
     "id": "TC1028_21_OM_16",
     "author": "Administrador",
     "title": "¿Cuál es el error en el siguiente código?",
@@ -444,7 +434,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'closed', 1, '{
     "id": "TC1028_21_OM_19",
     "author": "Administrador",
     "title": "¿Cuál es la sintaxis correcta para imprimir la cadena \"Hola, Mundo\" en Python?",
@@ -473,7 +463,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'closed', 1, '{
     "id": "TC1028_22_OM_1",
     "author": "Andre Rossell",
     "title": "Bools, ints, floats...",
@@ -502,7 +492,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
 
 
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'closed', 2, '{
     "id": "TC1028_21_OM_13",
     "author": "Administrador",
     "title": "¿Qué sucede al declarar dos veces una variable con diferente valor?",
@@ -531,7 +521,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'closed', 2, '{
     "id": "TC1028_21_OM_18",
     "author": "Administrador",
     "title": "Selecciona la opción correcta.",
@@ -560,7 +550,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'closed', 2, '{
     "id": "TC1028_21_OM_20",
     "author": "Administrador",
     "title": "¿Cuál de las siguientes opciones describe una característica VERDADERA de Python?",
@@ -589,7 +579,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'closed', 2, '{
     "id": "TC1028_22_OM_3",
     "author": "Andre Rossell",
     "title": "Diferencias entre numeros y strings",
@@ -600,11 +590,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
     "hints": true,
     "options": [
         {
-            "text": "'200'",
+            "text": "`200`",
             "explanation": "Incorrecto, aunque de inicio sea un string, Python tiene la capacidad de analizarlo como el número que representa haciendo uso de una función extra"
         },
         {
-            "text": "'doscientos'",
+            "text": "`doscientos`",
             "explanation": "Correcto, Python no puede interpretar números escritos de esta forma."
         },
         {
@@ -618,11 +608,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'closed', 2, '{
     "id": "TC1028_22_OM_4",
     "author": "Andre Rossell",
     "title": "¿Quién y qué soy?",
-    "description": "128==128.0==int('128')",
+    "description": "128==128.0==int(`128`)",
     "topic": "[TOPIC FAULT] 2.2 Variables, constantes y tipos de datos.",
     "difficulty": "Mediano",
     "answer": 1,
@@ -642,7 +632,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
 
 
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'closed', 3, '{
     "id": "TC1028_21_OM_17",
     "author": "Administrador",
     "title": "Selecciona la opción correcta.",
@@ -667,7 +657,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'closed', 3, '{
     "id": "TC1028_22_OM_5",
     "author": "Andre Rossell",
     "title": "Operadores y su aplicabilidad",
@@ -678,11 +668,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
     "hints": true,
     "options": [
         {
-            "text": "'200'-135.2",
+            "text": "`200`-135.2",
             "explanation": "El 200 se evaluará como entero, será parseado a float para la operación y se podrá completar sin problema."
         },
         {
-            "text": "'Hola'<'Hello'",
+            "text": "`Hola`<`Hello`",
             "explanation": "Los operadores de comparación no se limitan a los números, también aplican a strings."
         },
         {
@@ -692,7 +682,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'closed', 3, '{
     "id": "TC1028_22_OM_6",
     "author": "Administrador",
     "title": "Diferencias entre variables y constantes",
@@ -721,7 +711,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "closed", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'closed', 3, '{
     "id": "TC1028_22_OM_7",
     "author": "Administrador",
     "title": "Tipos de datos",
@@ -756,7 +746,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "clo
 
 
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'closed', 1, '{
     "id": "TC1028_22_OM_14",
     "author": "Administrador",
     "title": "Uso de variables o constantes para datos en específico",
@@ -785,7 +775,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'closed', 1, '{
     "id": "TC1028_22_OM_15",
     "author": "Administrador",
     "title": "Tipo de dato de un número",
@@ -806,7 +796,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'closed', 1, '{
     "id": "TC1028_23_OM_1",
     "author": "Andre Rossell",
     "title": "Jerarquía de operaciones en Python",
@@ -831,7 +821,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'closed', 1, '{
     "id": "TC1028_23_OM_2",
     "author": "Andre Rossell",
     "title": "Jerarquía de operadores",
@@ -857,7 +847,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "clo
 }');
 
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'closed', 2, '{
     "id": "TC1028_22_OM_9",
     "author": "Administrador",
     "title": "Identificador de variables",
@@ -886,7 +876,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'closed', 2, '{
     "id": "TC1028_22_OM_10",
     "author": "Administrador",
     "title": "Identificador de variables 2",
@@ -915,7 +905,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'closed', 2, '{
     "id": "TC1028_22_OM_12",
     "author": "Administrador",
     "title": "Valores válidos en los diferentes tipos de datos",
@@ -944,7 +934,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'closed', 2, '{
     "id": "TC1028_22_OM_13",
     "author": "Administrador",
     "title": "Tipo de datos en ingresos y gastos",
@@ -973,7 +963,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'closed', 2, '{
     "id": "TC1028_23_OM_3",
     "author": "Andre Rossell",
     "title": "Tipos de datos en operaciones",
@@ -984,7 +974,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "clo
     "hints": false,
     "options": [
         {
-            "text": "'200'/2",
+            "text": "`200`/2",
             "explanation": ""
         },
         {
@@ -1000,7 +990,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "clo
 
 
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'closed', 3, '{
     "id": "TC1028_23_OM_13",
     "author": "Administrador",
     "title": "Uso de los corchetes en Python",
@@ -1021,7 +1011,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'closed', 3, '{
     "id": "TC1028_25_OM_1",
     "author": "Andre Rossell",
     "title": "Sustitución de fórmulas matemáticas",
@@ -1042,7 +1032,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'closed', 3, '{
     "id": "TC1028_22_OM_11",
     "author": "Administrador",
     "title": "Sintaxis en nombres de variables",
@@ -1071,7 +1061,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "clo
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "closed", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'closed', 3, '{
     "id": "TC1028_22_OM_8",
     "author": "Administrador",
     "title": "Constantes",
@@ -1105,11 +1095,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "clo
 
 
 -- open questions
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'open', 1, '{
     "id": "TC1028_21_C_1",
     "author": "Andre Rossell",
     "title": "Inicio de sesión básico.",
-    "description": "Realiza un script que pida el nombre de usuario para inciar sesión y despliegue un saludo que diga: 'Hola, _input_!'.",
+    "description": "Realiza un script que pida el nombre de usuario para inciar sesión y despliegue un saludo que diga: `Hola, _input_!`.",
     "topic":"2.1 Estructura básica de un programa secuencial.",
     "difficulty": "Fácil",
     "driver": "fn",
@@ -1133,11 +1123,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'open', 1, '{
     "id": "TC1028_21_C_6",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Edad y país adaptado.",
-    "description": "Escribe un programa que solicite al usuario su edad y ciudad, y luego imprima un saludo personalizado que incluya ambos datos. Ejemplo: 'Bienvenido, tu edad es 17 años y eres de México'.",
+    "description": "Escribe un programa que solicite al usuario su edad y ciudad, y luego imprima un saludo personalizado que incluya ambos datos. Ejemplo: `Bienvenido, tu edad es 17 años y eres de México`.",
     "topic": "2.1 Estructura básica de un programa secuencial.",
     "difficulty": "Fácil",
     "driver": "info",
@@ -1165,7 +1155,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "ope
     ]
   }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'open', 1, '{
     "id": "TC1028_21_C_7",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Multiplicacion de dos números.",
@@ -1201,7 +1191,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'open', 1, '{
     "id": "TC1028_21_C_11",
     "author": "Administrador",
     "title": "Calcula edad.",
@@ -1229,11 +1219,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'open', 1, '{
     "id": "TC1028_21_C_12",
     "author": "Administrador",
     "title": "Programa número de mascotas.",
-    "description": "Elabora un programa que recibe un número entero que representa el número de mascotas e imprime un mensaje de cuidado. Ejemplo: 'Cuida de tus 2 mascotas'.",
+    "description": "Elabora un programa que recibe un número entero que representa el número de mascotas e imprime un mensaje de cuidado. Ejemplo: `Cuida de tus 2 mascotas`.",
     "topic": "2.1 Estructura básica de un programa secuencial.",
     "difficulty": "Fácil",
     "driver": "numero_mascotas",
@@ -1258,7 +1248,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "ope
 }');
 
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'open', 2, '{
     "id": "TC1028_21_C_2",
     "author": "Andre Roosell",
     "title": "Diferencia con inputs.",
@@ -1286,7 +1276,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'open', 2, '{
     "id": "TC1028_21_C_3",
     "author": "Andre Rossell",
     "title": "Procesamiento de entradas y salidas.",
@@ -1314,7 +1304,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'open', 2, '{
     "id": "TC1028_21_C_8",
     "author": "Christian Raul Jiménez Hernández",
     "title": "Estructura de inputs y outputs.",
@@ -1344,11 +1334,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "ope
 
 
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'open', 3, '{
     "id": "TC1028_21_C_4",
     "author": "Andre Rossell",
     "title": "Procesamiento de entradas y salidas 2.",
-    "description": "Supón que recibirás un número no negativo de minutos y necesitas saber de manera rápida si este pasa de 2 horas. Para ello, escribirás un pequeño programa cuya entrada sea la cantidad entera de minutos y la salida 'No pasa' o 'Sí pasa' como corresponda.",
+    "description": "Supón que recibirás un número no negativo de minutos y necesitas saber de manera rápida si este pasa de 2 horas. Para ello, escribirás un pequeño programa cuya entrada sea la cantidad entera de minutos y la salida `No pasa` o `Sí pasa` como corresponda.",
     "topic":"2.1 Estructura básica de un programa secuencial.",
     "difficulty": "Difícil",
     "driver": "fn",
@@ -1372,7 +1362,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'open', 3, '{
     "id": "TC1028_21_C_5",
     "author": "Andre Rossell",
     "title": "Concatenación básica.",
@@ -1400,7 +1390,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'open', 3, '{
     "id": "TC1028_21_C_9",
     "author": "Christian Raul Jiménez Hernández",
     "title": "Conversiones de números.",
@@ -1428,7 +1418,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "open", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (1, 'open', 3, '{
     "id": "TC1028_21_C_10",
     "author": "Christian Raul Jiménez Hernández",
     "title": "Concatenación de números.",
@@ -1459,7 +1449,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (1, "ope
 
 
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'open', 1, '{
     "id": "TC1028_21_C_13",
     "author": "Administrador",
     "title": "Incrementar variable en 2.",
@@ -1487,7 +1477,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'open', 1, '{
     "id": "TC1028_21_C_14",
     "author": "Administrador",
     "title": "Disminuir variable en 2.",
@@ -1515,11 +1505,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'open', 1, '{
     "id": "TC1028_21_C_15",
     "author": "Administrador",
     "title": "Número de turno.",
-    "description": "Programa que reciba un número entero y muestre un mensaje diciendo el turno en una fila según dicho número. Ejemplo: 'Estás en el turno 3'.",
+    "description": "Programa que reciba un número entero y muestre un mensaje diciendo el turno en una fila según dicho número. Ejemplo: `Estás en el turno 3`.",
     "topic": "2.1 Estructura básica de un programa secuencial.",
     "difficulty": "Fácil",
     "driver": "turno",
@@ -1543,7 +1533,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'open', 1, '{
     "id": "TC1028_21_C_16",
     "author": "Administrador",
     "title": "Saludo personalizado.",
@@ -1575,7 +1565,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'open', 1, '{
     "id": "TC1028_21_C_17",
     "author": "Administrador",
     "title": "Suma de dos números.",
@@ -1612,7 +1602,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "ope
 }');
 
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'open', 2, '{
     "id": "TC1028_22_C_3",
     "author": "Andre Rossell",
     "title": "Comparación de strings.",
@@ -1640,7 +1630,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'open', 2, '{
     "id": "TC1028_22_C_4",
     "author": "Andre Rossell",
     "title": "Tratamiento booleano.",
@@ -1668,11 +1658,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'open', 2, '{
     "id": "TC1028_22_C_8",
     "author": "Administrador",
     "title": "Verificar tipos de datos.",
-    "description": "Realice un programa donde identifique si el numero entero es un multiplo de 2. Imprime 'TRUE' si es correcto o 'FALSE' si es incorrecto.",
+    "description": "Realice un programa donde identifique si el numero entero es un multiplo de 2. Imprime `TRUE` si es correcto o `FALSE` si es incorrecto.",
     "topic": "2.2 Variables, constantes y tipos de datos.",
     "difficulty": "Mediano",
     "driver": "multiplos_2_bool",
@@ -1697,7 +1687,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "ope
 }');
 
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'open', 3, '{
   "id": "TC1028_21_C_20",
   "author": "Administrador",
   "title": "Operaciones con strings.",
@@ -1729,11 +1719,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "ope
   ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'open', 3, '{
     "id": "TC1028_22_C_2",
     "author": "Andre Rossell",
     "title": "Detección de entradas 2.",
-    "description": "Realiza un script que, recibiendo dos números, regrese un 'True' o 'False' correspondientemente, indicando si alguno es divisible entre el otro.",
+    "description": "Realiza un script que, recibiendo dos números, regrese un `True` o `False` correspondientemente, indicando si alguno es divisible entre el otro.",
     "topic": "2.2 Variables, constantes y tipos de datos.",
     "difficulty": "Difícil",
     "driver": "fn",
@@ -1757,7 +1747,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'open', 3, '{
     "id": "TC1028_22_C_5",
     "author": "Andre Rossell",
     "title": "Tratamiento booleano.",
@@ -1785,11 +1775,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "open", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (2, 'open', 3, '{
     "id": "TC1028_22_C_6",
     "author": "Administrador",
     "title": "Variables y tipos de datos.",
-    "description": "Dado un conjunto de figuras geométricas, escribe una función en Python que calcule su área. Hay 'cuadrado', 'triangulo', 'circulo' y 'rectangulo'.",
+    "description": "Dado un conjunto de figuras geométricas, escribe una función en Python que calcule su área. Hay `cuadrado`, `triangulo`, `circulo` y `rectangulo`.",
     "topic": "2.2 Variables, constantes y tipos de datos.",
     "difficulty": "Difícil",
     "driver": "calcular_area",
@@ -1817,11 +1807,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (2, "ope
 
 
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'open', 1, '{
     "id": "TC1028_21_C_18",
     "author": "Administrador",
     "title": "Saludo personalizado.",
-    "description": "Escribe un programa que solicite al usuario su nombre y apellido, y luego imprima un saludo personalizado que incluya ambos datos. Ejemplo: 'Hola Juan Pérez, ¡bienvenido!'.",
+    "description": "Escribe un programa que solicite al usuario su nombre y apellido, y luego imprima un saludo personalizado que incluya ambos datos. Ejemplo: `Hola Juan Pérez, ¡bienvenido!`.",
     "topic": "2.1 Estructura básica de un programa secuencial.",
     "difficulty": "Fácil",
     "driver": "saludo_personalizado",
@@ -1849,7 +1839,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "ope
     ]
   }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'open', 1, '{
   "id": "TC1028_21_C_19",
   "author": "Administrador",
   "title": "Conversión de temperatura.",
@@ -1881,11 +1871,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "ope
   ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'open', 1, '{
     "id": "TC1028_22_C_1",
     "author": "Andre Rossell",
     "title": "Detección de entradas.",
-    "description": "Realiza un script que detecte si el número recibido en input es de tipo int e imprima 'True' si es int o 'False' si no.",
+    "description": "Realiza un script que detecte si el número recibido en input es de tipo int e imprima `True` si es int o `False` si no.",
     "topic": "2.2 Variables, constantes y tipos de datos.",
     "difficulty": "Fácil",
     "driver": "fn",
@@ -1909,7 +1899,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'open', 1, '{
     "id": "TC1028_22_C_10",
     "author": "Administrador",
     "title": "Constantes negativas.",
@@ -1937,7 +1927,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 1, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'open', 1, '{
     "id": "TC1028_22_C_15",
     "author": "Administrador",
     "title": "Suma de dos fuerzas.",
@@ -1966,11 +1956,11 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "ope
 }');
 
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'open', 2, '{
     "id": "TC1028_22_C_9",
     "author": "Administrador",
     "title": "Identificacion de tipos de datos.",
-    "description": "Realice un codigo donde identifique si una division tiene mas de 5 decimales. Imprime 'TRUE' si es correcto o 'FALSE' si es incorrecto.",
+    "description": "Realice un codigo donde identifique si una division tiene mas de 5 decimales. Imprime `TRUE` si es correcto o `FALSE` si es incorrecto.",
     "topic": "2.2 Variables, constantes y tipos de datos.",
     "difficulty": "Mediano",
     "driver": "identificar_datos",
@@ -1994,7 +1984,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'open', 2, '{
     "id": "TC1028_22_C_11",
     "author": "Administrador",
     "title": "Número de llantas de n carros.",
@@ -2022,7 +2012,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'open', 2, '{
     "id": "TC1028_22_C_12",
     "author": "Administrador",
     "title": "Suma de número entero con número de punto flotante.",
@@ -2050,7 +2040,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 2, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'open', 2, '{
     "id": "TC1028_22_C_13",
     "author": "Administrador",
     "title": "Concatena 2 strings.",
@@ -2079,7 +2069,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "ope
 }');
 
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'open', 3, '{
     "id": "TC1028_22_C_7",
     "author": "Administrador",
     "title": "Diferentes tipos de datos.",
@@ -2107,7 +2097,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'open', 3, '{
     "id": "TC1028_23_C_2",
     "author": "Andre Rossell",
     "title": "IF y Operaciones.",
@@ -2135,7 +2125,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'open', 3, '{
     "id": "TC1028_23_C_5",
     "author": "Andre Rossell",
     "title": "IF para Operaciones.",
@@ -2163,7 +2153,7 @@ INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "ope
     ]
 }');
 
-INSERT INTO question_h (module_id, type, diffculty_id, question) VALUES (3, "open", 3, '{
+INSERT INTO question_h (module_id, type, difficulty_id, question) VALUES (3, 'open', 3, '{
     "id": "TC1028_23_C_7",
     "author": "Administrador",
     "title": "Calculadora básica.",

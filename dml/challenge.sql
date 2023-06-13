@@ -6,38 +6,37 @@ INSERT INTO difficulty (difficulty_id, difficulty, points_per_questions) VALUES 
 
 -- challenge
 INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (1, 1, "Challenge 1", 1, 3);
+VALUES (1, 1, 'Challenge 1', 1, 3);
 
 INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (1, 2, "Challenge 2", 2, 2);
+VALUES (1, 2, 'Challenge 2', 2, 2);
 
 INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (1, 3, "Challenge 3", 1, 1);
+VALUES (1, 3, 'Challenge 3', 1, 1);
 
 --
 INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (2, 1, "Challenge 4", 1, 3);
+VALUES (2, 1, 'Challenge 4', 1, 3);
 
 INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (2, 2, "Challenge 5", 2, 2);
+VALUES (2, 2, 'Challenge 5', 2, 2);
 
 INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (2, 3, "Challenge 6", 1, 1);
+VALUES (2, 3, 'Challenge 6', 1, 1);
 
 --
 INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (3, 1, "Challenge 7", 1, 3);
+VALUES (3, 1, 'Challenge 7', 1, 3);
 
 INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (3, 2, "Challenge 8", 2, 2);
+VALUES (3, 2, 'Challenge 8', 2, 2);
 
 INSERT INTO challenge (module_id, difficulty_id, title, open_questions, closed_questions) 
-VALUES (3, 3, "Challenge 9", 1, 2);
-
+VALUES (3, 3, 'Challenge 9', 1, 2);
 
 
 -- closed questions
-INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (1, 'closed', '{
     "id": "TC1028_21_OM_1",
     "author": "Andre Rossell",
     "title": "Comprensión de Comentarios",
@@ -62,7 +61,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (1, 'closed', '{
     "id": "TC1028_21_OM_2",
     "author": "Andre Rossell",
     "title": "Distinción entre funciones elementales",
@@ -87,7 +86,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (1, 'closed', '{
     "id": "TC1028_21_OM_3",
     "author": "Andre Rossell",
     "title": "Distinción entre funciones elementales",
@@ -112,7 +111,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (1, 'closed', '{
     "id": "TC1028_21_OM_5",
     "author": "Andre Rossell",
     "title": "Distinción entre funciones elementales",
@@ -137,7 +136,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (2, 'closed', '{
     "id": "TC1028_21_OM_4",
     "author": "Andre Rossell",
     "title": "Detección de errores en el código",
@@ -162,7 +161,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (2, 'closed', '{
     "id": "TC1028_21_OM_6",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Lógica",
@@ -191,7 +190,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (2, 'closed', '{
     "id": "TC1028_21_OM_9",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Lógica en Python",
@@ -220,7 +219,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (2, 'closed', '{
     "id": "TC1028_21_OM_11",
     "author": "Administrador",
     "title": "Sintaxis para imprimir un caracter en Python",
@@ -235,11 +234,11 @@ INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
             "explanation": "Incorrecto. La acción realizada imprime la variable de nombre a, más no necesariamente a la letra a"
         },
         {
-            "text": "print('a')",
+            "text": "print(´a´)",
             "explanation": "Correcto. La acción realizada imprime como carácter la letra a"
         },
         {
-            "text": "input('a')",
+            "text": "input(´a´)",
             "explanation": "Incorrecto. La acción realizada se utiliza para pedir una entrada al usuario después de mostrar la letra a"
         },
         {
@@ -249,7 +248,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (2, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (3, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (3, 'closed', '{
     "id": "TC1028_21_OM_7",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Selecciona la opción correcta.",
@@ -278,7 +277,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (3, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (3, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (3, 'closed', '{
     "id": "TC1028_21_OM_12",
     "author": "Administrador",
     "title": "Sintaxis requerida para sumar una variable con un entero en Python",
@@ -303,7 +302,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (3, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (3, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (3, 'closed', '{
     "id": "TC1028_21_OM_17",
     "author": "Administrador",
     "title": "Selecciona la opción correcta.",
@@ -328,7 +327,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (3, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (4, 'closed', '{
     "id": "TC1028_21_OM_14",
     "author": "Administrador",
     "title": "Uso de sintaxis en Python",
@@ -349,7 +348,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (4, 'closed', '{
     "id": "TC1028_21_OM_16",
     "author": "Administrador",
     "title": "¿Cuál es el error en el siguiente código?",
@@ -378,7 +377,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (4, 'closed', '{
     "id": "TC1028_21_OM_19",
     "author": "Administrador",
     "title": "¿Cuál es la sintaxis correcta para imprimir la cadena \"Hola, Mundo\" en Python?",
@@ -407,7 +406,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (4, 'closed', '{
     "id": "TC1028_22_OM_1",
     "author": "Andre Rossell",
     "title": "Bools, ints, floats...",
@@ -432,7 +431,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (4, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (5, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (5, 'closed', '{
     "id": "TC1028_21_OM_18",
     "author": "Administrador",
     "title": "Selecciona la opción correcta.",
@@ -461,7 +460,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (5, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (5, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (5, 'closed', '{
     "id": "TC1028_21_OM_20",
     "author": "Administrador",
     "title": "¿Cuál de las siguientes opciones describe una característica VERDADERA de Python?",
@@ -490,7 +489,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (5, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (5, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (5, 'closed', '{
     "id": "TC1028_22_OM_3",
     "author": "Andre Rossell",
     "title": "Diferencias entre numeros y strings",
@@ -501,11 +500,11 @@ INSERT INTO question (challenge_id, type, question) VALUES (5, "closed", '{
     "hints": true,
     "options": [
         {
-            "text": "'200'",
+            "text": "`200`",
             "explanation": "Incorrecto, aunque de inicio sea un string, Python tiene la capacidad de analizarlo como el número que representa haciendo uso de una función extra"
         },
         {
-            "text": "'doscientos'",
+            "text": "doscientos`",
             "explanation": "Correcto, Python no puede interpretar números escritos de esta forma."
         },
         {
@@ -520,7 +519,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (5, "closed", '{
 }');
 
 
-INSERT INTO question (challenge_id, type, question) VALUES (6, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (6, 'closed', '{
     "id": "TC1028_21_OM_12",
     "author": "Administrador",
     "title": "Sintaxis requerida para sumar una variable con un entero en Python",
@@ -545,7 +544,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (6, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (6, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (6, 'closed', '{
     "id": "TC1028_21_OM_17",
     "author": "Administrador",
     "title": "Selecciona la opción correcta.",
@@ -570,7 +569,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (6, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (6, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (6, 'closed', '{
     "id": "TC1028_22_OM_5",
     "author": "Andre Rossell",
     "title": "Operadores y su aplicabilidad",
@@ -581,11 +580,11 @@ INSERT INTO question (challenge_id, type, question) VALUES (6, "closed", '{
     "hints": true,
     "options": [
         {
-            "text": "'200'-135.2",
+            "text": "´200´-135.2",
             "explanation": "El 200 se evaluará como entero, será parseado a float para la operación y se podrá completar sin problema."
         },
         {
-            "text": "'Hola'<'Hello'",
+            "text": "´Hola´<´Hello´",
             "explanation": "Los operadores de comparación no se limitan a los números, también aplican a strings."
         },
         {
@@ -596,7 +595,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (6, "closed", '{
 }');
 
 
-INSERT INTO question (challenge_id, type, question) VALUES (7, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (7, 'closed', '{
     "id": "TC1028_21_OM_16",
     "author": "Administrador",
     "title": "¿Cuál es el error en el siguiente código?",
@@ -625,7 +624,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (7, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (7, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (7, 'closed', '{
     "id": "TC1028_21_OM_19",
     "author": "Administrador",
     "title": "¿Cuál es la sintaxis correcta para imprimir la cadena \"Hola, Mundo\" en Python?",
@@ -654,7 +653,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (7, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (7, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (7, 'closed', '{
     "id": "TC1028_22_OM_1",
     "author": "Andre Rossell",
     "title": "Bools, ints, floats...",
@@ -679,7 +678,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (7, "closed", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (7, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (7, 'closed', '{
     "id": "TC1028_22_OM_2",
     "author": "Andre Rossell",
     "title": "Acerca de sobreescribir",
@@ -704,7 +703,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (7, "closed", '{
     ]
 }');     
 
-INSERT INTO question (challenge_id, type, question) VALUES (7, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (7, 'closed', '{
     "id": "TC1028_22_OM_14",
     "author": "Administrador",
     "title": "Uso de variables o constantes para datos en específico",
@@ -733,7 +732,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (7, "closed", '{
     ]
 }');     
 
-INSERT INTO question (challenge_id, type, question) VALUES (8, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (8, 'closed', '{
     "id": "TC1028_22_OM_9",
     "author": "Administrador",
     "title": "Identificador de variables",
@@ -762,7 +761,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (8, "closed", '{
     ]
 }');     
 
-INSERT INTO question (challenge_id, type, question) VALUES (8, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (8, 'closed', '{
     "id": "TC1028_22_OM_10",
     "author": "Administrador",
     "title": "Identificador de variables 2",
@@ -791,7 +790,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (8, "closed", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (8, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (8, 'closed', '{
     "id": "TC1028_22_OM_12",
     "author": "Administrador",
     "title": "Valores válidos en los diferentes tipos de datos",
@@ -820,7 +819,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (8, "closed", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (8, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (8, 'closed', '{
     "id": "TC1028_22_OM_13",
     "author": "Administrador",
     "title": "Tipo de datos en ingresos y gastos",
@@ -849,7 +848,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (8, "closed", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (8, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (8, 'closed', '{
     "id": "TC1028_22_OM_13",
     "author": "Administrador",
     "title": "Tipo de datos en ingresos y gastos",
@@ -878,7 +877,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (8, "closed", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (9, 'closed', '{
     "id": "TC1028_22_OM_5",
     "author": "Andre Rossell",
     "title": "Operadores y su aplicabilidad",
@@ -889,11 +888,11 @@ INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
     "hints": true,
     "options": [
         {
-            "text": "'200'-135.2",
+            "text": "´200´-135.2",
             "explanation": "El 200 se evaluará como entero, será parseado a float para la operación y se podrá completar sin problema."
         },
         {
-            "text": "'Hola'<'Hello'",
+            "text": "´Hola´<´Hello´",
             "explanation": "Los operadores de comparación no se limitan a los números, también aplican a strings."
         },
         {
@@ -903,7 +902,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (9, 'closed', '{
     "id": "TC1028_22_OM_6",
     "author": "Administrador",
     "title": "Diferencias entre variables y constantes",
@@ -932,7 +931,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (9, 'closed', '{
     "id": "TC1028_22_OM_7",
     "author": "Administrador",
     "title": "Tipos de datos",
@@ -961,7 +960,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
+INSERT INTO question (challenge_id, type, question) VALUES (9, 'closed', '{
     "id": "TC1028_22_OM_8",
     "author": "Administrador",
     "title": "Constantes",
@@ -993,11 +992,11 @@ INSERT INTO question (challenge_id, type, question) VALUES (9, "closed", '{
 
 
 -- open questions
-INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (1, 'open', '{
     "id": "TC1028_21_C_1",
     "author": "Andre Rossell",
     "title": "Inicio de sesión básico.",
-    "description": "Realiza un script que pida el nombre de usuario para inciar sesión y despliegue un saludo que diga: 'Hola, _input_!'.",
+    "description": "Realiza un script que pida el nombre de usuario para inciar sesión y despliegue un saludo que diga: ´Hola, _input_!´.",
     "topic":"2.1 Estructura básica de un programa secuencial.",
     "difficulty": "Fácil",
     "driver": "fn",
@@ -1021,11 +1020,11 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (1, 'open', '{
     "id": "TC1028_21_C_6",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Edad y país adaptado.",
-    "description": "Escribe un programa que solicite al usuario su edad y ciudad, y luego imprima un saludo personalizado que incluya ambos datos. Ejemplo: 'Bienvenido, tu edad es 17 años y eres de México'.",
+    "description": "Escribe un programa que solicite al usuario su edad y ciudad, y luego imprima un saludo personalizado que incluya ambos datos. Ejemplo: ´Bienvenido, tu edad es 17 años y eres de México´.",
     "topic": "2.1 Estructura básica de un programa secuencial.",
     "difficulty": "Fácil",
     "driver": "info",
@@ -1054,7 +1053,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
   }');  
 
 
-INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (1, 'open', '{
     "id": "TC1028_21_C_7",
     "author": "Christian Raúl Jiménez Hernández",
     "title": "Multiplicacion de dos números.",
@@ -1091,7 +1090,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
 }');  
 
 
-INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (1, 'open', '{
     "id": "TC1028_21_C_11",
     "author": "Administrador",
     "title": "Calcula edad.",
@@ -1120,7 +1119,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (1, "open", '{
 }');  
 
 
-INSERT INTO question (challenge_id, type, question) VALUES (2, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (2, 'open', '{
     "id": "TC1028_21_C_2",
     "author": "Andre Roosell",
     "title": "Diferencia con inputs.",
@@ -1148,7 +1147,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (2, "open", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (2, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (2, 'open', '{
     "id": "TC1028_21_C_3",
     "author": "Andre Rossell",
     "title": "Procesamiento de entradas y salidas.",
@@ -1176,7 +1175,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (2, "open", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (2, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (2, 'open', '{
     "id": "TC1028_21_C_8",
     "author": "Christian Raul Jiménez Hernández",
     "title": "Estructura de inputs y outputs.",
@@ -1204,11 +1203,11 @@ INSERT INTO question (challenge_id, type, question) VALUES (2, "open", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (3, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (3, 'open', '{
     "id": "TC1028_21_C_4",
     "author": "Andre Rossell",
     "title": "Procesamiento de entradas y salidas 2.",
-    "description": "Supón que recibirás un número no negativo de minutos y necesitas saber de manera rápida si este pasa de 2 horas. Para ello, escribirás un pequeño programa cuya entrada sea la cantidad entera de minutos y la salida 'No pasa' o 'Sí pasa' como corresponda.",
+    "description": "Supón que recibirás un número no negativo de minutos y necesitas saber de manera rápida si este pasa de 2 horas. Para ello, escribirás un pequeño programa cuya entrada sea la cantidad entera de minutos y la salida ´No pasa´ o ´Sí pasa´ como corresponda.",
     "topic":"2.1 Estructura básica de un programa secuencial.",
     "difficulty": "Difícil",
     "driver": "fn",
@@ -1232,7 +1231,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (3, "open", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (3, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (3, 'open', '{
     "id": "TC1028_21_C_5",
     "author": "Andre Rossell",
     "title": "Concatenación básica.",
@@ -1260,7 +1259,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (3, "open", '{
     ]
 }');
 
-INSERT INTO question (challenge_id, type, question) VALUES (3, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (3, 'open', '{
     "id": "TC1028_21_C_9",
     "author": "Christian Raul Jiménez Hernández",
     "title": "Conversiones de números.",
@@ -1289,11 +1288,11 @@ INSERT INTO question (challenge_id, type, question) VALUES (3, "open", '{
 }');
 
 
-INSERT INTO question (challenge_id, type, question) VALUES (4, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (4, 'open', '{
     "id": "TC1028_21_C_12",
     "author": "Administrador",
     "title": "Programa número de mascotas.",
-    "description": "Elabora un programa que recibe un número entero que representa el número de mascotas e imprime un mensaje de cuidado. Ejemplo: 'Cuida de tus 2 mascotas'.",
+    "description": "Elabora un programa que recibe un número entero que representa el número de mascotas e imprime un mensaje de cuidado. Ejemplo: ´Cuida de tus 2 mascotas´.",
     "topic": "2.1 Estructura básica de un programa secuencial.",
     "difficulty": "Fácil",
     "driver": "numero_mascotas",
@@ -1317,7 +1316,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (4, "open", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (4, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (4, 'open', '{
     "id": "TC1028_21_C_13",
     "author": "Administrador",
     "title": "Incrementar variable en 2.",
@@ -1345,7 +1344,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (4, "open", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (4, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (4, 'open', '{
     "id": "TC1028_21_C_14",
     "author": "Administrador",
     "title": "Disminuir variable en 2.",
@@ -1373,7 +1372,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (4, "open", '{
     ]
 }'); 
 
-INSERT INTO question (challenge_id, type, question) VALUES (5, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (5, 'open', '{
     "id": "TC1028_22_C_3",
     "author": "Andre Rossell",
     "title": "Comparación de strings.",
@@ -1401,7 +1400,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (5, "open", '{
     ]
 }'); 
 
-INSERT INTO question (challenge_id, type, question) VALUES (5, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (5, 'open', '{
     "id": "TC1028_22_C_4",
     "author": "Andre Rossell",
     "title": "Tratamiento booleano.",
@@ -1429,11 +1428,11 @@ INSERT INTO question (challenge_id, type, question) VALUES (5, "open", '{
     ]
 }'); 
 
-INSERT INTO question (challenge_id, type, question) VALUES (5, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (5, 'open', '{
     "id": "TC1028_22_C_8",
     "author": "Administrador",
     "title": "Verificar tipos de datos.",
-    "description": "Realice un programa donde identifique si el numero entero es un multiplo de 2. Imprime 'TRUE' si es correcto o 'FALSE' si es incorrecto.",
+    "description": "Realice un programa donde identifique si el numero entero es un multiplo de 2. Imprime ´TRUE´ si es correcto o ´FALSE´ si es incorrecto.",
     "topic": "2.2 Variables, constantes y tipos de datos.",
     "difficulty": "Mediano",
     "driver": "multiplos_2_bool",
@@ -1458,11 +1457,11 @@ INSERT INTO question (challenge_id, type, question) VALUES (5, "open", '{
 }'); 
 
 
-INSERT INTO question (challenge_id, type, question) VALUES (5, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (5, 'open', '{
     "id": "TC1028_22_C_8",
     "author": "Administrador",
     "title": "Verificar tipos de datos.",
-    "description": "Realice un programa donde identifique si el numero entero es un multiplo de 2. Imprime 'TRUE' si es correcto o 'FALSE' si es incorrecto.",
+    "description": "Realice un programa donde identifique si el numero entero es un multiplo de 2. Imprime ´TRUE´ si es correcto o ´FALSE´ si es incorrecto.",
     "topic": "2.2 Variables, constantes y tipos de datos.",
     "difficulty": "Mediano",
     "driver": "multiplos_2_bool",
@@ -1486,7 +1485,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (5, "open", '{
     ]
 }'); 
 
-INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (6, 'open', '{
   "id": "TC1028_21_C_20",
   "author": "Administrador",
   "title": "Operaciones con strings.",
@@ -1518,11 +1517,11 @@ INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
   ]
 }'); 
 
-INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (6, 'open', '{
     "id": "TC1028_22_C_2",
     "author": "Andre Rossell",
     "title": "Detección de entradas 2.",
-    "description": "Realiza un script que, recibiendo dos números, regrese un 'True' o 'False' correspondientemente, indicando si alguno es divisible entre el otro.",
+    "description": "Realiza un script que, recibiendo dos números, regrese un ´True´ o ´False´ correspondientemente, indicando si alguno es divisible entre el otro.",
     "topic": "2.2 Variables, constantes y tipos de datos.",
     "difficulty": "Difícil",
     "driver": "fn",
@@ -1546,7 +1545,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
     ]
 }'); 
 
-INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (6, 'open', '{
     "id": "TC1028_22_C_5",
     "author": "Andre Rossell",
     "title": "Tratamiento booleano.",
@@ -1574,11 +1573,11 @@ INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
     ]
 }'); 
 
-INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (6, 'open', '{
     "id": "TC1028_22_C_6",
     "author": "Administrador",
     "title": "Variables y tipos de datos.",
-    "description": "Dado un conjunto de figuras geométricas, escribe una función en Python que calcule su área. Hay 'cuadrado', 'triangulo', 'circulo' y 'rectangulo'.",
+    "description": "Dado un conjunto de figuras geométricas, escribe una función en Python que calcule su área. Hay ´cuadrado´, ´triangulo´, ´circulo´ y ´rectangulo´.",
     "topic": "2.2 Variables, constantes y tipos de datos.",
     "difficulty": "Difícil",
     "driver": "calcular_area",
@@ -1602,11 +1601,11 @@ INSERT INTO question (challenge_id, type, question) VALUES (6, "open", '{
     ]
 }'); 
 
-INSERT INTO question (challenge_id, type, question) VALUES (7, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (7, 'open', '{
     "id": "TC1028_22_C_1",
     "author": "Andre Rossell",
     "title": "Detección de entradas.",
-    "description": "Realiza un script que detecte si el número recibido en input es de tipo int e imprima 'True' si es int o 'False' si no.",
+    "description": "Realiza un script que detecte si el número recibido en input es de tipo int e imprima ´True´ si es int o ´False´ si no.",
     "topic": "2.2 Variables, constantes y tipos de datos.",
     "difficulty": "Fácil",
     "driver": "fn",
@@ -1630,7 +1629,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (7, "open", '{
     ]
 }'); 
 
-INSERT INTO question (challenge_id, type, question) VALUES (7, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (7, 'open', '{
     "id": "TC1028_22_C_10",
     "author": "Administrador",
     "title": "Constantes negativas.",
@@ -1658,7 +1657,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (7, "open", '{
     ]
 }'); 
 
-INSERT INTO question (challenge_id, type, question) VALUES (7, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (7, 'open', '{
     "id": "TC1028_22_C_15",
     "author": "Administrador",
     "title": "Suma de dos fuerzas.",
@@ -1686,7 +1685,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (7, "open", '{
     ]
 }'); 
 
-INSERT INTO question (challenge_id, type, question) VALUES (7, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (7, 'open', '{
     "id": "TC1028_23_C_3",
     "author": "Andre Rossell",
     "title": "Operación más básica.",
@@ -1715,11 +1714,11 @@ INSERT INTO question (challenge_id, type, question) VALUES (7, "open", '{
 }');    
 
 
-INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (8, 'open', '{
     "id": "TC1028_22_C_9",
     "author": "Administrador",
     "title": "Identificacion de tipos de datos.",
-    "description": "Realice un codigo donde identifique si una division tiene mas de 5 decimales. Imprime 'TRUE' si es correcto o 'FALSE' si es incorrecto.",
+    "description": "Realice un codigo donde identifique si una division tiene mas de 5 decimales. Imprime ´TRUE´ si es correcto o ´FALSE´ si es incorrecto.",
     "topic": "2.2 Variables, constantes y tipos de datos.",
     "difficulty": "Mediano",
     "driver": "identificar_datos",
@@ -1743,7 +1742,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (8, 'open', '{
     "id": "TC1028_22_C_11",
     "author": "Administrador",
     "title": "Número de llantas de n carros.",
@@ -1771,7 +1770,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (8, 'open', '{
     "id": "TC1028_22_C_12",
     "author": "Administrador",
     "title": "Suma de número entero con número de punto flotante.",
@@ -1799,7 +1798,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (8, 'open', '{
     "id": "TC1028_22_C_13",
     "author": "Administrador",
     "title": "Concatena 2 strings.",
@@ -1827,7 +1826,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (8, "open", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (9, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (9, 'open', '{
     "id": "TC1028_22_C_7",
     "author": "Administrador",
     "title": "Diferentes tipos de datos.",
@@ -1855,7 +1854,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (9, "open", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (9, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (9, 'open', '{
     "id": "TC1028_23_C_2",
     "author": "Andre Rossell",
     "title": "IF y Operaciones.",
@@ -1883,7 +1882,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (9, "open", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (9, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (9, 'open', '{
     "id": "TC1028_23_C_5",
     "author": "Andre Rossell",
     "title": "IF para Operaciones.",
@@ -1911,7 +1910,7 @@ INSERT INTO question (challenge_id, type, question) VALUES (9, "open", '{
     ]
 }');  
 
-INSERT INTO question (challenge_id, type, question) VALUES (9, "open", '{
+INSERT INTO question (challenge_id, type, question) VALUES (9, 'open', '{
     "id": "TC1028_23_C_7",
     "author": "Administrador",
     "title": "Calculadora básica.",
