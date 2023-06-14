@@ -1,0 +1,4 @@
+export POSTGRES_USER=code4user
+export POSTGRES_PASS=pwdcode4uhbubpwd
+export POSTGRES_NAME=code4u
+export PGPASSWORD=$POSTGRES_PASS
