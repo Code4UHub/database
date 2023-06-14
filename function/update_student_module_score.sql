@@ -19,7 +19,7 @@ BEGIN
     SELECT module_id INTO cur_module_id FROM challenge WHERE challenge_id = cur_challenge_id;
     SELECT SUM(score) INTO module_score FROM student_challenge WHERE student_id = cur_student_id AND challenge_id = cur_challenge_id;
 
-    UPDATE student_module SET score = module_score WHERE student_id = cur_student_id AND module_id = cur_module_id;
+    UPDATE student_module SET score = score + module_score WHERE student_id = cur_student_id AND module_id = cur_module_id;
     
     RETURN NEW;
 END;
