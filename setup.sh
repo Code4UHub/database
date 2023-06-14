@@ -16,7 +16,7 @@ echo -e "\nCreating database functions"
 #
 # # Create triggers
 echo -e "\nCreating database triggers"
-./scripts/import.sh scripts
+./scripts/import.sh trigger
 
 # # Run dml files to fill tables
 echo -e "\nRunning Data Manipulation Language"
