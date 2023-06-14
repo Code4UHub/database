@@ -17,7 +17,7 @@ BEGIN
     cur_question_id := NEW.question_id;
 
     SELECT challenge_id INTO cur_challenge_id FROM question WHERE question_id = cur_question_id;
-    SELECT SUM(score) INTO challenge_score FROM student_question WHERE student_id = cur_student_id;
+    SELECT SUM(score) INTO challenge_score FROM student_question WHERE student_id = cur_student_id AND question_id = cur_question_id;
 
     UPDATE student_challenge SET score = challenge_score WHERE student_id = cur_student_id AND challenge_id = cur_challenge_id;
     
