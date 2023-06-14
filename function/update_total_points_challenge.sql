@@ -4,7 +4,7 @@ CREATE OR REPLACE FUNCTION update_total_points_challenge()
 AS $$
 DECLARE
   record_row INTEGER;
-  cur_difficulty CURSOR FOR SELECT point_per_question FROM difficulty WHERE difficulty_id = NEW.difficulty_id;
+  cur_difficulty CURSOR FOR SELECT points_per_question FROM difficulty WHERE difficulty_id = NEW.difficulty_id;
 BEGIN
   OPEN cur_difficulty;
   

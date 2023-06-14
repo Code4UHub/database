@@ -1,7 +1,7 @@
 -- difficulty
-INSERT INTO difficulty (difficulty_id, difficulty, point_per_question) VALUES (1, 'Fácil', 30);
-INSERT INTO difficulty (difficulty_id, difficulty, point_per_question) VALUES (2, 'Medio', 50);
-INSERT INTO difficulty (difficulty_id, difficulty, point_per_question) VALUES (3, 'Difícil', 70);
+INSERT INTO difficulty (difficulty_id, difficulty, points_per_question) VALUES (1, 'Fácil', 30);
+INSERT INTO difficulty (difficulty_id, difficulty, points_per_question) VALUES (2, 'Medio', 50);
+INSERT INTO difficulty (difficulty_id, difficulty, points_per_question) VALUES (3, 'Difícil', 70);
 
 
 -- challenge

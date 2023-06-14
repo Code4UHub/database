@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS difficulty;
 CREATE TABLE difficulty (
 	difficulty_id INTEGER,
     difficulty VARCHAR(15),
-    point_per_question INTEGER,
+    points_per_question INTEGER,
     PRIMARY KEY (difficulty_id)
 );
 
