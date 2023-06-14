@@ -15,6 +15,6 @@ fi
 for file in `find $1 | grep -i '.sql' | sort` 
 do 
   # echo "importing $file"
-  # psql -d $POSTGRES_NAME -U $POSTGRES_USER -a -f $file
-  echo "psql -d $POSTGRES_NAME -U $POSTGRES_USER -a -f $file"
+  psql -d $POSTGRES_NAME -U $POSTGRES_USER -a -f $file
+  # echo "psql -d $POSTGRES_NAME -U $POSTGRES_USER -a -f $file"
 done
