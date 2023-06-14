@@ -1,3 +1,4 @@
-export DB_USER=code4user
-export DB_PASSWORD=pwdcode4uhbubpwd
-export DB_DATABASE=code4u
+export POSTGRES_USER=code4user
+export POSTGRES_PASS=pwdcode4uhbubpwd
+export POSTGRES_NAME=code4u
+export PGPASSWORD=$POSTGRES_PASS
