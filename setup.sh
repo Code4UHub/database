@@ -6,18 +6,22 @@
 # Create enviroment variables
 source ./scripts/env.sh
 
-# # Run ddl files to create tables
+# Delete database and do shit
+echo -e "\nReset database and user"
+./scripts/init.sh
+
+# Run ddl files to create tables
 echo -e "\nRunning Data Definition Language"
 ./scripts/import.sh ddl
 
-# # Create function
+# Create function
 echo -e "\nCreating database functions"
 ./scripts/import.sh function
-#
-# # Create triggers
+
+# Create triggers
 echo -e "\nCreating database triggers"
 ./scripts/import.sh trigger
 
-# # Run dml files to fill tables
+# Run dml files to fill tables
 echo -e "\nRunning Data Manipulation Language"
 ./scripts/import.sh dml
